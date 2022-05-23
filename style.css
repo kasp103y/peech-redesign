@@ -1,7 +1,92 @@
+/*Fonts*/
+
+@font-face {
+  font-family: "shocka";
+  src: url("font/shockaserif-bold-webfont.woff2") format("woff2"),
+    url("font/shockaserif-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "shocka-bold";
+  src: url("font/shockaserif-light-webfont.woff2") format("woff2"),
+    url("font/shockaserif-light-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
 /************************************************************* Root CSS ****************************************************************************/
 
 :root {
-  --primary: #fff;
+  --primary: #fdfdfd;
+  --font-white: #fdfdfd;
+  --btn-color: #531939;
+  --heading: #121b24;
+  --paragraph: #25374c;
+  --paragraph-highlight: #b92b79;
+
+  --pink-100: #fddfef;
+  --pink-200: #fcc1e1;
+  --pink-300: #fba3d3;
+  --pink-400: #fa87c6;
+  --pink-500: #f96dba;
+  --pink-600: #f855af;
+  --pink-700: #b92b79;
+  --pink-800: #531939;
+
+  --blue-100: #f2f8ff;
+  --blue-200: #c5e1ff;
+  --blue-300: #9cccff;
+  --blue-400: #73b7ff;
+  --blue-500: #4ea4ff;
+  --blue-600: #2d93ff;
+  --blue-700: #0f84ff;
+  --blue-800: #0076f3;
+  --blue-900: #004fa2;
+
+  --sand-100: #fdf1df;
+  --sand-200: #fce4c1;
+  --sand-300: #fbd7a3;
+  --sand-400: #facb87;
+  --sand-500: #f9c06d;
+  --sand-600: #f8b655;
+  --sand-700: #f7ac3f;
+  --sand-800: #d2891e;
+  /*Font-sizes*/
+  --font-size-sm: clamp(0.8rem, -0.12vw + 0.83rem, 0.73rem);
+  --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --font-size-md: clamp(1.25rem, 1.22vw + 0.94rem, 1.92rem);
+  --font-size-lg: clamp(1.56rem, 2.81vw + 0.86rem, 3.11rem);
+  --font-size-xl: clamp(1.95rem, 5.59vw + 0.55rem, 5.03rem);
+  --font-size-xxl: clamp(2.44rem, 10.36vw + -0.15rem, 8.14rem);
+  --font-size-xxxl: clamp(3.05rem, 18.39vw + -1.55rem, 13.17rem);
+  /*Letter spacing */
+  --letter-spacing-sm: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
+  --letter-spacing-base: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
+  --letter-spacing-md: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+  --letter-spacing-lg: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
+  --letter-spacing-xl: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
+  --letter-spacing-xxl: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
+  --letter-spacing-xxxl: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
+  /*Spacing*/
+  --spacing-1: 0.125rem;
+  --spacing-2: 0.25rem;
+  --spacing-3: 0.5rem;
+  --spacing-4: 0.75rem;
+  --spacing-5: 1rem;
+  --spacing-6: 1.15rem;
+  --spacing-7: 2rem;
+  --spacing-8: 2.5rem;
+  --spacing-9: 3rem;
+  --spacing-10: 4rem;
+  --spacing-11: 5rem;
+  --spacing-12: 6rem;
+  --spacing-13: 10rem;
+  --spacing-14: 120rem;
+  /*Borders*/
+  --border-pink-thin: 2px solid var(--pink-800);
+  --border-blue-thin: 2px solid var(--blue-900);
 }
 
 /************************************************************* Root slut ****************************************************************************/
@@ -20,14 +105,140 @@ img {
   width: 100%;
 }
 
+body {
+  background-color: var(--primary);
+}
+
 /**Komponenter**/
 
-.button {
+.button-primary {
+  background-color: var(--btn-color);
+  border: none;
+  color: var(--font-white);
+  width: 12rem;
+  padding-block: var(--spacing-3);
+  padding-inline: var(--spacing-4);
+  font-size: var(--font-size-sm);
+  font-family: "poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+
+.button-secondary {
+  background-color: var(--blue-900);
+  border: none;
+  color: var(--font-white);
+  width: 12rem;
+  padding-block: var(--spacing-3);
+  padding-inline: var(--spacing-4);
+  font-size: var(--font-size-sm);
+  font-family: "poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+
+.button-outlined-var {
+  background-color: transparent;
+  border: var(--border-blue-thin);
+  color: var(--blue-900);
+  width: 12rem;
+  padding-block: var(--spacing-3);
+  padding-inline: var(--spacing-4);
+  font-size: var(--font-size-sm);
+  font-family: "poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+
+.button-outlined {
+  background-color: transparent;
+  border: var(--border-pink-thin);
+  color: var(--pink-800);
+  width: 12rem;
+  padding-block: var(--spacing-3);
+  padding-inline: var(--spacing-4);
+  font-size: var(--font-size-sm);
+  font-family: "poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
 }
 
 /************************************************************* General slut ****************************************************************************/
 
+.heading-xxxl,
+.heading-one-lg {
+  font-family: "shocka-bold", serif;
+  font-weight: bold;
+  font-size: var(--font-size-xxxl);
+}
+
+.heading-xxl,
+.heading-one {
+  font-family: "shocka-bold", serif;
+  font-weight: bold;
+  font-size: var(--font-size-xxl);
+}
+
+.heading-xl {
+  font-family: "shocka-bold", serif;
+  font-weight: bold;
+  font-size: var(--font-size-xl);
+}
+.heading-lg {
+  font-family: "shocka-bold", serif;
+  font-weight: bold;
+  font-size: var(--font-size-lg);
+}
+
+.heading-md {
+  font-family: "shocka-bold", serif;
+  font-weight: bold;
+  font-size: var(--font-size-md);
+}
+p {
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size-sm);
+}
+
+.heading-base,
+.p-lead {
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  font-size: var(--font-size-base);
+}
+.heading-sm {
+  font-family: "shocka-bold", serif;
+  font-weight: bold;
+  font-size: var(--font-size-sm);
+}
+
 /************************************************************* Mobil styling ****************************************************************************/
+
+.hero {
+  height: 100vh;
+  display: grid;
+
+  align-content: center;
+}
+
+.hero-h1 {
+  justify-self: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
 
 /************************************************************* Mobil slut ****************************************************************************/
 
@@ -44,3 +255,38 @@ img {
 }
 
 /************************************************************* Desktop slut ****************************************************************************/
+/**********************************HOVERS**************/
+
+.button:hover {
+  animation: vibrate-2 100ms ease infinite both;
+  transition: ease 250ms;
+  border-radius: 0 999px 999px 0;
+}
+
+/****************************KEYFRAMES*****************/
+@keyframes vibrate-2 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(1px, -1px);
+    transform: translate(1px, -1px);
+  }
+  40% {
+    -webkit-transform: translate(1px, 1px);
+    transform: translate(1px, 1px);
+  }
+  60% {
+    -webkit-transform: translate(-1px, 1px);
+    transform: translate(-1px, 1px);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px);
+    transform: translate(-1px, -1px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
