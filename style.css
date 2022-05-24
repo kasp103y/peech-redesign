@@ -1,7 +1,7 @@
 /*Fonts*/
 
 @font-face {
-  font-family: "shocka";
+  font-family: "shocka-bold";
   src: url("font/shockaserif-bold-webfont.woff2") format("woff2"),
     url("font/shockaserif-bold-webfont.woff") format("woff");
   font-weight: normal;
@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  font-family: "shocka-bold";
+  font-family: "shocka";
   src: url("font/shockaserif-light-webfont.woff2") format("woff2"),
     url("font/shockaserif-light-webfont.woff") format("woff");
   font-weight: bold;
@@ -63,13 +63,9 @@
   --font-size-xxl: clamp(2.44rem, 10.36vw + -0.15rem, 8.14rem);
   --font-size-xxxl: clamp(3.05rem, 18.39vw + -1.55rem, 13.17rem);
   /*Letter spacing */
-  --letter-spacing-sm: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
-  --letter-spacing-base: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
-  --letter-spacing-md: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
-  --letter-spacing-lg: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
-  --letter-spacing-xl: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
-  --letter-spacing-xxl: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
-  --letter-spacing-xxxl: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
+  --letter-spacing-lg: 0.15em;
+  --letter-spacing-md: 0.1em;
+  --letter-spacing-sm: 0.08em;
   /*Spacing*/
   --spacing-1: 0.125rem;
   --spacing-2: 0.25rem;
@@ -179,6 +175,7 @@ body {
   font-family: "shocka-bold", serif;
   font-weight: bold;
   font-size: var(--font-size-xxxl);
+  letter-spacing: var(--letter-spacing-lg);
 }
 
 .heading-xxl,
@@ -186,6 +183,7 @@ body {
   font-family: "shocka-bold", serif;
   font-weight: bold;
   font-size: var(--font-size-xxl);
+  letter-spacing: var(--letter-spacing-lg);
 }
 
 .heading-xl {
@@ -279,11 +277,12 @@ p {
 
 /************************************************************* Desktop slut ****************************************************************************/
 /**********************************HOVERS**************/
-
-.button:hover {
-  animation: vibrate-2 100ms ease infinite both;
-  transition: ease 250ms;
-  border-radius: 0 999px 999px 0;
+@media (min-width: 600px) {
+  .button:hover {
+    animation: vibrate-2 100ms ease infinite both;
+    transition: ease 250ms;
+    border-radius: 0 999px 999px 0;
+  }
 }
 
 /****************************KEYFRAMES*****************/
