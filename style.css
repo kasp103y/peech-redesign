@@ -129,7 +129,7 @@ body {
   background-color: var(--pink-300);
   border: none;
   color: var(--pink-800);
-  width: 12rem;
+  width: 14rem;
   padding-block: var(--spacing-3);
   padding-inline: var(--spacing-4);
   font-size: var(--font-size-base);
@@ -201,6 +201,8 @@ body {
   animation-direction: reverse;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  cursor: pointer;
+  transition: var(--easing);
 }
 
 .notice {
@@ -318,6 +320,12 @@ body {
   background-position: 50%;
 }
 
+.cta-shop {
+  display: flex;
+  justify-content: center;
+  margin-block: var(--spacing-10);
+}
+
 /************************************************************* Mobil styling ****************************************************************************/
 
 /* NAVIGATION */
@@ -329,7 +337,6 @@ header {
   left: 0;
   width: 100vw;
   background-color: var(--primary);
-  box-shadow: var(--shadow);
 }
 
 .top-header {
@@ -344,6 +351,7 @@ header {
   justify-content: space-evenly;
   padding-block: var(--spacing-3);
   padding-inline: var(--spacing-8);
+  z-index: 1000;
 }
 
 ul li {
@@ -358,10 +366,12 @@ ul a {
 
 .nav {
   display: flex;
+  z-index: 1000;
   justify-content: space-between;
   padding-block: var(--spacing-4);
   padding-inline: var(--spacing-8);
   align-items: center;
+  box-shadow: var(--shadow);
 }
 
 .logo {
@@ -393,7 +403,7 @@ ul a {
 
 .custom-shape-divider-bottom-1653556236 {
   position: absolute;
-  bottom: -1%;
+  bottom: -0.5%;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -432,7 +442,7 @@ ul a {
 .flex {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: var(--spacing-8);
 }
 
 .justify-center {
@@ -464,13 +474,44 @@ ul a {
   justify-content: space-between;
 }
 
+.blob-bg-omtalt {
+  background-image: url("billeder/omtalt-blob.svg");
+  background-size: cover;
+  background-position: 50%;
+}
+.omtalt-list {
+  display: flex;
+  gap: var(--spacing-6);
+  font-family: "shocka-bold", serif;
+  font-weight: bold;
+  font-size: var(--font-size-xl);
+  overflow: hidden;
+}
+
+.center-h2 {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  margin-block: var(--spacing-4);
+}
+
+.omtalt-logo:nth-child(even) {
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+}
+
+.omtalt-wrapper {
+  grid-column-start: span 3;
+}
+
 @media (max-width: 730px) {
   .main-grid {
-    margin-inline: var(--spacing-8);
+    padding-inline: var(--spacing-6);
   }
   .burger-content {
     width: 100vw;
     height: 100vh;
+    z-index: -1;
     top: 0;
     display: flex;
     flex-direction: column;
@@ -532,7 +573,8 @@ ul a {
     display: none;
   }
 
-  .product-card {
+  .product-card,
+  .article-card {
     margin-block: var(--spacing-8);
   }
 }
@@ -599,6 +641,21 @@ ul a {
     grid-column-start: 1;
     grid-row-end: span 3;
   } */
+  .featured-artikler {
+    display: flex;
+    gap: var(--spacing-8);
+  }
+
+  .article-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-block: var(--spacing-8);
+  }
+
+  .artikel-btn {
+    width: 100%;
+  }
 
   .featured-products {
     display: grid;
@@ -613,10 +670,10 @@ ul a {
     grid-column-start: 3;
     grid-row-start: 2;
   }
-}
-.featured-products .product-card:nth-child(3) {
-  grid-column-start: 1;
-  grid-row-start: 3;
+  .featured-products .product-card:nth-child(3) {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
 }
 
 /************************************************************* Tablet slut ****************************************************************************/
@@ -653,6 +710,9 @@ ul a {
     animation: vibrate-2 100ms ease infinite both;
     transition: var(--easing);
     border-radius: 0 999px 999px 0;
+  }
+  .points-btn:hover {
+    scale: 1.2;
   }
 }
 
