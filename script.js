@@ -15,3 +15,15 @@ function removeArrow() {
   noticeMeSenpai.classList.toggle("hide", window.scrollY > 0);
   console.log("hej");
 }
+
+const dropDownBtn = document.querySelector(".dropdown");
+dropDownBtn.addEventListener("mouseover", dropDown);
+dropDownBtn.addEventListener("mouseleave", dropDownHide);
+
+function dropDown() {
+  document.getElementById("myDropdown").classList.add("show");
+}
+
+function dropDownHide() {
+  document.getElementById("myDropdown").classList.remove("show");
+}
