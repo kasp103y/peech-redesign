@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <!-- <script src="script.js" defer></script> -->
+    <script src="script.js" defer></script>
     <script src="mixitup.min.js" defer></script>
     <script src="mixitup-multifilter.min.js" defer></script>
     <script src="filter.js" defer></script>
@@ -20,6 +20,98 @@
   <body>
     <main class="sex_produkter">
       <section class="main-grid">
+
+<!-- Filter web sektion -->
+              <section class="filter_web">
+                  <h4 class="heading-md">Filter </h4>
+                  <h4 class="p-lead">Produkter</h4>
+            
+
+                  <fieldset class="input-field" data-filter-group="produkter">
+                    <button class="p-small" type="button" data-toggle=".alle_p">
+                      Alle
+                    </button>
+
+                    <button class="p-small" type="button" data-toggle=".dildo">
+                      Dildoer
+                    </button>
+                    <button class="p-small" type="button" data-toggle=".kink">
+                      Kink
+                    </button>
+                    <button
+                      class="p-small"
+                      type="button"
+                      data-toggle=".vibrator"
+                    >
+                      Vibrator
+                    </button>
+                  </fieldset>
+               
+                  <h4 class="p-lead">Brands</h4>
+                  
+                  <fieldset class="input-field" data-filter-group="brands">
+                    <button class="p-small" type="button" data-toggle=".alle_b">
+                      Alle
+                    </button>
+
+                    <button
+                      class="p-small"
+                      type="button"
+                      data-toggle=".satisfyer"
+                    >
+                      Satisfyer
+                    </button>
+                    <button class="p-small" type="button" data-toggle=".peech">
+                      Peech
+                    </button>
+                    <button
+                      class="p-small"
+                      type="button"
+                      data-toggle=".pillow_talk"
+                    >
+                      Pillow talk
+                    </button>
+                  </fieldset>
+                </form>
+
+                <!---- price range------>
+
+                <div class="priceSlider">
+                  <h4 class="p-lead">Pris</h4>
+
+                  <div class="min-max">
+                    <div class="min">
+                      <label>Min</label><span id="min-value"></span>
+                    </div>
+                    <div class="max">
+                      <label>Max</label><span id="max-value"></span>
+                    </div>
+                  </div>
+
+                  <div class="min-max-range">
+                    <input
+                      type="range"
+                      min="0"
+                      max="5000"
+                      value="2000"
+                      class="range"
+                      id="min"
+                    />
+                    <input
+                      type="range"
+                      min="5001"
+                      max="10000"
+                      value="8000"
+                      class="range"
+                      id="max"
+                    />
+                  </div>
+
+                  <div style="clear: both"></div>
+                </div>
+
+              </section>
+
         <section class="content-wrapper">
           <article>
             <h1 class="heading-one overskrift">Shop</h1>
@@ -75,22 +167,17 @@
                 />
               </svg>
             </div>
-            <!-- <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div> -->
-              <!-- Filter sektion -->
-              <section>
-                <h3 class="heading-md">Filter</h3>
+         
+              <!-- Filter mobil sektion -->
+              <section class="filter_mobil">
+                 <div class="dropdown_m">                   
+              <button onclick="myFunction_m()" class="dropbtn_m heading-md"> Filter &#8595;</button>
+              <div id="myDropdown_m" class="dropdown-content_m">
                 <form>
-               <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn p-lead">Produkter &#8595;</button>
+              
 
-                  <!-- <h4 class="p-lead">Produkter</h4> -->
-              <div id="myDropdown" class="dropdown-content">
+                  <h4 class="p-lead">Produkter</h4>
+            
 
                   <fieldset class="input-field" data-filter-group="produkter">
                     <button class="p-small" type="button" data-toggle=".alle_p">
@@ -111,8 +198,7 @@
                       Vibrator
                     </button>
                   </fieldset>
-                  </div>
-               </div>
+               
                   <h4 class="p-lead">Brands</h4>
                   
                   <fieldset class="input-field" data-filter-group="brands">
@@ -139,7 +225,8 @@
                     </button>
                   </fieldset>
                 </form>
-                <!--  -->
+
+                <!---- price range------>
 
                 <div class="priceSlider">
                   <h4 class="p-lead">Pris</h4>
@@ -174,11 +261,9 @@
 
                   <div style="clear: both"></div>
                 </div>
+              </div>
 
-                <!--  -->
               </section>
-              <!-- ---------->
-            </div>
           </article>
           <section class="produkt_grid">
             <!------------------------------ BULLIE------------------------------------- -->
@@ -504,6 +589,7 @@
     font-size: 16px;
     border: none;
     cursor: pointer;
+   
   }
 
   /* Dropdown button on hover & focus */
@@ -523,9 +609,10 @@ transform: scale(1.08);
     display: none;
     position: absolute;
     background-color: var(--primary);
-    min-width: 160px;
+    min-width: 227px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    padding: 1rem;
   }
 
   /* Links inside the dropdown */
@@ -539,6 +626,51 @@ transform: scale(1.08);
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {
+    display: block;
+  }
+
+
+  /* dropdown mobil------------- */
+  .dropbtn_m {
+    color: black;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+   
+  }
+
+  /* Dropdown button on hover & focus */
+  .dropbtn_m:hover,
+  .dropbtn_m:focus {
+transform: scale(1.08);
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown_m {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content_m {
+    display: none;
+    position: absolute;
+    background-color: var(--primary);
+    min-width: 227px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 1rem;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content_m a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .show_m {
     display: block;
   }
 
@@ -700,7 +832,9 @@ transform: scale(1.08);
     transform: scale(1.03);
     transition: var(--easing);
   }
-
+.filter_web{
+  display: none;
+}
   /* -----------------------------------------------TABLET------------------ */
 
   @media (min-width: 730px){
@@ -716,6 +850,9 @@ transform: scale(1.08);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
+.filter_web{
+  display: none;
+}
   }
     /* -----------------------------------------------WEB------------------ */
 
@@ -725,6 +862,7 @@ transform: scale(1.08);
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   grid-auto-rows: minmax(100px, auto);
+
     }
 
 .poplaere_proukter{
@@ -732,6 +870,16 @@ transform: scale(1.08);
   grid-template-columns: repeat(2, 1fr);
   grid-gap:20px;
   grid-auto-rows: minmax(100px, auto);
+}
+.filter_mobil{
+  display: none;
+}
+
+.filter_web{
+  display: block;
+  position: fixed;
+top: 6rem;
+left: 1rem;
 }
   }
 </style>
@@ -754,25 +902,30 @@ transform: scale(1.08);
     outputMax.innerHTML = this.value;
   };
 
-  /* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+  
+
+// dropdown for mobil----------------------
+function myFunction_m() {
+    document.getElementById("myDropdown_m").classList.toggle("show_m");
   }
 
   // Close the dropdown menu if the user clicks outside of it
   window.onclick = function (event) {
-    if (!event.target.matches(".dropbtn")) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
+    if (!event.target.matches(".dropbtn_m")) {
+      var dropdowns_m = document.getElementsByClassName("dropdown-content_m");
       var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains("show")) {
-          openDropdown.classList.remove("show");
+      for (i = 0; i < dropdowns_m.length; i++) {
+        var openDropdown_m = dropdowns_m[i];
+        if (openDropdown_m.classList.contains("show_m")) {
+          openDropdown_m.classList.remove("show_m");
         }
       }
     }
   };
+
+
+
+
 
   const videos = document.querySelectorAll("video")
 
