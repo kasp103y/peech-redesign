@@ -88,7 +88,8 @@
   /*Easing*/
   --easing: 250ms ease-in-out;
   /*Shadow*/
-  --shadow: 28px 40px 80px -30px rgba(46, 46, 46, 1);
+  --shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 /************************************************************* Root slut ****************************************************************************/
@@ -796,6 +797,12 @@ address {
   font-size: var(--font-size-md);
 }
 
+.heading-md-sans {
+  font-family: "poppins", sans-serif;
+
+  font-size: var(--font-size-md);
+}
+
 .heading-md-bold {
   font-family: "shocka-bold", serif;
 
@@ -866,6 +873,12 @@ address {
 
 .blob-bg {
   background-image: url("billeder/blob-bg.svg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+.blob-bg-ekstra {
+  background-image: url("billeder/blobekstra.svg");
   background-size: cover;
   background-position: 50%;
 }
@@ -1153,7 +1166,7 @@ ul li a {
 .lead-var {
   font-family: "shocka", sans-serif;
   font-size: var(--font-size-lg);
-  color: var(--primary);
+  color: var(--pink-800);
   font-weight: var(--bold);
 }
 
@@ -1354,7 +1367,7 @@ ul li a {
     height: 150px;
     top: 85%;
     left: 0;
-    background-image: url(billeder/Footer.svg);
+    background-image: url(billeder/cookie.svg);
     background-position: 80%;
     transition: var(--trans);
   }
@@ -1362,6 +1375,13 @@ ul li a {
     display: flex;
     color: var(--blue-900);
     gap: 3rem;
+  }
+
+  .lead-var {
+    font-family: "shocka", sans-serif;
+    font-size: var(--font-size-lg);
+    color: var(--pink-800);
+    font-weight: var(--bold);
   }
 
   .hidden {
