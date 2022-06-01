@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <script src="carousel.js" defer></script>
+     <script
+      src="https://kit.fontawesome.com/25564eaf21.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </head>
   <body>
     <main>
@@ -349,31 +354,188 @@
             </article>
           </section>
 
+<section class="kundeandmeldelser">
+          <article>
+            <h3 class=" heading-md">Kundeandmeldelser</h3>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                   <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="small-text">Baseret på 6 andmeldelser</p>
+              <div class="skriv_andmeldelser">
+                <button class="button-outlined button"> Skriv andmeldelse  &#x2192; </button>
+              </div>
+          </article>
 
 
+       <article class="person_andmelelser">
+         <div class="dato_star">
+         <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                   <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="small-text">10/02/1998</p>
+        </div>
+        <p class="small-text"> Clara Lund</p>
+        <p class="heading-sm">Waaaaau siger jeg bare!!</p>
+        <p class="p-small">Nok den bedste orgasma ever!! Farvel mænd, har ik brug for jer mere. Sorry not sorry</p>
+       </article>
+       <article class="person_andmelelser">
+         <div class="dato_star">
+         <div class="stars">
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                   <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="small-text">10/02/1998</p>
+        </div>
+        <p class="small-text"> Kasper dahl</p>
+        <p class="heading-sm">Den er for god..</p>
+        <p class="p-small"> Købt clamy til min kæreste, og nu har vi ikke sex mere. Hun siger at hun ikke har brug for mænd nu.. Fordi den giver hende bedre orgasmaer end jeg kan... </p>
+       </article>
+<article class="person_andmelelser">
+         <div class="dato_star">
+         <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                   <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="small-text">10/02/1998</p>
+        </div>
+        <p class="small-text"> Bo Larsen</p>
+        <p class="heading-sm">God service og vejledning</p>
+        <p class="p-small">God service og vejledning, let og tilgængelig hjemmeside, godt udvalg og lækre produkter, hurtig levering.</p>
+       </article>
+
+<p class="p alle_andmeldelser button" >Se alle andmeldelser  &#x2192;</p>
+
+</section>
+
+<section class="populear_produkter">
+  <h3 class="heading-md">Populære produkter</h3>
+            <article class="poplaere_proukter">
+              
+<div class="andre_produkter">
+  <video src="content/video/test_hover.mp4"></video>
+  <div class="navn_pris">
+                  <p class="small-text">Bullie vibrator</p>
+                  <p class="small-text">250 DKK</p>
+                </div>
+                <p class="small-text">Peech</p>
+                <div class="stars">
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                   <i class="fa-regular fa-star"></i>
+                  
+                </div>
+
+</div>
+<div class="andre_produkter">
+  <video src="content/video/test_hover.mp4"></video>
+  <div class="navn_pris">
+                  <p class="small-text">Bullie vibrator</p>
+                  <p class="small-text">250 DKK</p>
+                </div>
+                <p class="small-text">Peech</p>
+                <div class="stars">
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                 <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                </div>
+
+</div>
 
 
+            </article>
 
-        </section>
       </section>
     </main>
   </body>
 </html>
 
 <style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+
+ 
+  
+
+
+/* ----------------------general--------- */
+.fa-star{
+  color: var(--pink-200);
+}
+.populear_produkter{
+  margin-block:var(--spacing-10);
+}
+video{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+
+ 
+  .andre_produkter{
+    margin-block:var(--spacing-7); 
+     
+  }
+  .navn_pris {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+.alle_andmeldelser{
+  color: var(--pink-800);
+}
+.person_andmelelser{
+  margin-block:var(--spacing-7) ;
+}
+.person_andmelelser p {
+  margin-top: var(--spacing-4);
+}
+.dato_star{
+  display: flex;
+}
+.dato_star p{
+      padding-left: var(--spacing-5);
+      margin-top: 3px;
+
+}
+.dato_star .star_ikon{
+    width: 1rem;
+    height: auto;
 }
 
-td, th {
-  border: 1px solid var(--heading);
-  text-align: left;
-  padding: 8px;
-} 
-  
-       /* ---------general--------- */
+.skriv_andmeldelser p{
+  border: 1px solid var(--pink-800);
+  width: fit-content;
+  padding-inline: var(--spacing-3);
+  cursor: pointer;
+  color: var(--pink-800);
+}
+.skriv_andmeldelser p:hover{
+  background-color: var(--pink-700);
+}
+.kundeandmeldelser h3{
+   margin-bottom:var(--spacing-3);
+}
+ .star_ikon {
+     margin-bottom:var(--spacing-2);
+    width: 4%;
+    height: auto;
+  }
        .check_icon{
          padding-right: 5px;
          padding-bottom: 10px;
@@ -406,7 +568,18 @@ td, th {
          margin-top: var(--spacing-4);
          margin-bottom:var(--spacing-7);
        }
+ /* --------------tabel------------ */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
+td, th {
+  border: 1px solid var(--heading);
+  text-align: left;
+  padding: 8px;
+} 
        /* ------- knap med plus og minus-------- */
 
 .tilføj_cta{
@@ -513,43 +686,66 @@ td, th {
 </style>
 
 <script>
-  var minusBtn = document.getElementById("minus"),
-    plusBtn = document.getElementById("plus"),
-    numberPlace = document.getElementById("numberPlace"),
-    submitBtn = document.getElementById("submit"),
-    number = 0, /// number value
-    min = 0, /// min number
-    max = 30; /// max number
+  // var minusBtn = document.getElementById("minus"),
+  //   plusBtn = document.getElementById("plus"),
+  //   numberPlace = document.getElementById("numberPlace"),
+  //   submitBtn = document.getElementById("submit"),
+  //   number = 0, /// number value
+  //   min = 0, /// min number
+  //   max = 30; /// max number
 
-  minusBtn.onclick = function () {
-    if (number > min) {
-      number = number - 1; /// Minus 1 of the number
-      numberPlace.innerText = number; /// Display the value in place of the number
-    }
-    if (number == min) {
-      numberPlace.style.color = "red";
-      setTimeout(function () {
-        numberPlace.style.color = "black";
-      }, 500);
-    } else {
-      numberPlace.style.color = "black";
-    }
-  };
-  plusBtn.onclick = function () {
-    if (number < max) {
-      number = number + 1;
-      numberPlace.innerText = number; /// Display the value in place of the number
-    }
-    if (number == max) {
-      numberPlace.style.color = "red";
-      setTimeout(function () {
-        numberPlace.style.color = "black";
-      }, 500);
-    } else {
-      numberPlace.style.color = "black";
-    }
-  };
-  submitBtn.onclick = function () {
-    alert("tilføjet til kurven: " + number);
-  };
+  // minusBtn.onclick = function () {
+  //   if (number > min) {
+  //     number = number - 1; /// Minus 1 of the number
+  //     numberPlace.innerText = number; /// Display the value in place of the number
+  //   }
+  //   if (number == min) {
+  //     numberPlace.style.color = "red";
+  //     setTimeout(function () {
+  //       numberPlace.style.color = "black";
+  //     }, 500);
+  //   } else {
+  //     numberPlace.style.color = "black";
+  //   }
+  // };
+  // plusBtn.onclick = function () {
+  //   if (number < max) {
+  //     number = number + 1;
+  //     numberPlace.innerText = number; /// Display the value in place of the number
+  //   }
+  //   if (number == max) {
+  //     numberPlace.style.color = "red";
+  //     setTimeout(function () {
+  //       numberPlace.style.color = "black";
+  //     }, 500);
+  //   } else {
+  //     numberPlace.style.color = "black";
+  //   }
+  // };
+  // submitBtn.onclick = function () {
+  //   alert("tilføjet til kurven: " + number);
+  // };
+
+
+
+  const videos = document.querySelectorAll("video")
+
+videos.forEach(video => {
+  video.addEventListener("mouseover", function () {
+    this.play()
+  })
+  
+  video.addEventListener("mouseout", function () {
+    this.pause()
+  })
+  
+  video.addEventListener("touchstart", function () {
+    this.play()
+  })
+  
+  video.addEventListener("touchend", function () {
+    this.pause()
+  })
+})
+
 </script>
