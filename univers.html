@@ -193,7 +193,7 @@
                   <figure class="article-img">
                     <img
                       src="billeder/univers/Stillinger_til_at_stimulere_prostata_1500x.webp"
-                      alt="Bullet af peech"
+                      alt="Prostata stimulator"
                     />
                   </figure>
                   <article class="artikel-beskriv">
@@ -219,7 +219,7 @@
                   <figure class="article-img">
                     <img
                       src="billeder/univers/Sexlegetoejsguide_til_penis_1500x.webp"
-                      alt="Bullet af peech"
+                      alt="Sexlegetøj i store mængder"
                     />
                   </figure>
                   <article class="artikel-beskriv">
@@ -280,7 +280,7 @@
             <figure class="article-img">
               <img
                 src="billeder/univers/Saadan_bliver_du_testet_for_sexsygdomme.webp"
-                alt="Bullet af peech"
+                alt="Sexsygdomme"
               />
             </figure>
             <article class="journal">
@@ -300,6 +300,13 @@
           </section>
         </section>
       </section>
+
+      <div class="load_mere">
+        <p class="p">1</p>
+        <p class="p default">2</p>
+        <p class="p default">3</p>
+        <p class="p default">4</p>
+      </div>
     </main>
   </body>
 </html>
@@ -310,23 +317,18 @@
   }
   /* planeter */
   .heading-svg:nth-child(2) {
-    position: absolute;
-    right: 2%;
-    top: 10%;
-    width: 50%;
+    display: none;
   }
 
   .heading-svg:nth-child(3) {
-    position: absolute;
-    right: 20%;
-    top: 47%;
+    display: none;
   }
 
   /* stjerner stor */
   .heading-svg:nth-child(4) {
     position: absolute;
-    right: 11%;
-    top: 20%;
+    right: 5%;
+    top: 7%;
   }
 
   /* stjerner lille */
@@ -336,7 +338,29 @@
     top: 100%;
   }
 
+  .default {
+    color: grey;
+  }
+
+  .load_mere {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    cursor: pointer;
+    margin-block: var(--spacing-7);
+  }
+
   @media (min-width: 700px) {
+    .load_mere {
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+      cursor: pointer;
+      margin-block: var(--spacing-7);
+    }
+    .load_mere p:hover {
+      text-decoration: underline;
+    }
     .first {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -349,6 +373,7 @@
 
     /* planeter */
     .heading-svg:nth-child(2) {
+      display: block;
       position: absolute;
       right: -40%;
       top: 50%;
@@ -356,6 +381,7 @@
 
     /* stjerner stor */
     .heading-svg:nth-child(4) {
+      display: block;
       position: absolute;
       left: -30%;
       top: 13%;
@@ -366,6 +392,10 @@
       grid-template-columns: 1fr 1fr;
       margin-block: var(--spacing-12);
       gap: var(--spacing-10);
+    }
+
+    .journal {
+      margin-block: 5rem;
     }
   }
 </style>
