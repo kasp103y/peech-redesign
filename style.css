@@ -86,10 +86,9 @@
   --border-pink-thin: 2px solid var(--pink-800);
   --border-blue-thin: 2px solid var(--blue-900);
   /*Easing*/
-  --easing: 250ms ease;
+  --easing: 250ms ease-in-out;
   /*Shadow*/
-  --shadow: rgba(48, 40, 46, 0.354) 6px 2px 16px 0px,
-    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  --shadow: 28px 40px 80px -30px rgba(46, 46, 46, 1);
 }
 
 /************************************************************* Root slut ****************************************************************************/
@@ -110,6 +109,7 @@ img {
 
 body {
   background-color: var(--primary);
+  overflow-x: hidden;
 }
 
 *:focus-visible {
@@ -143,6 +143,10 @@ body {
 .fa-user,
 .fa-cart-shopping {
   font-size: 1.5rem;
+}
+
+.fa-chevron-down {
+  font-size: 0.8rem;
 }
 
 header {
@@ -188,27 +192,29 @@ header {
   line-height: 1;
 }
 
-/*   .header .menu > ul > li .single-column-menu {
-    min-width: 280px;
-    max-width: 350px;
-  } */
-
 .header .menu > ul > li .sub-menu.mega-menu {
   left: 50%;
   transform: translateX(-50%);
 }
 
 .header .menu > ul > li .sub-menu.mega-menu-column-4 {
-  max-width: 1100px;
   width: 100vw;
   display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
+  padding-block: var(--spacing-4);
+  padding-inline: var(--spacing-8);
 }
 
 .header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item {
-  flex: 0 0 25%;
+  flex: 0 0 23%;
   padding: 0 15px;
+}
+
+.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item > * {
+  margin-block: var(--spacing-5);
+}
+
+.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item > ul > li {
+  margin-block: var(--spacing-3);
 }
 
 .header .menu > ul > li {
@@ -244,6 +250,12 @@ header {
 .header .item-right {
   flex: 0 0 17%;
   display: flex;
+  justify-content: end;
+}
+
+.menu-main {
+  display: flex;
+  justify-content: center;
 }
 
 .mobile-menu-trigger,
@@ -264,6 +276,18 @@ header {
     flex: 0 0 100%;
   }
 
+  .menu-main {
+    display: block;
+  }
+
+  .sub-menu-link {
+    font-size: var(--font-size-base);
+    margin-block: var(--spacing-6);
+  }
+
+  .list-item {
+    margin-block: var(--spacing-9);
+  }
   .header .menu-item-has-children a:first-child {
     display: flex;
     justify-content: space-between;
@@ -860,6 +884,7 @@ ul a {
   background-size: cover;
   position: relative;
   align-content: center;
+  background-attachment: fixed;
 }
 
 .custom-shape-divider-bottom-1653556236 {
@@ -963,6 +988,10 @@ ul a {
 
 .omtalt-wrapper {
   grid-column-start: span 3;
+}
+
+.menu-link {
+  font-size: var(--font-size-base);
 }
 
 @media (max-width: 730px) {
@@ -1189,7 +1218,8 @@ ul a {
 /************************************************************* Desktop slut ****************************************************************************/
 /**********************************HOVERS**************/
 @media (min-width: 600px) {
-  .button:hover {
+  .button:hover,
+  .logo:hover {
     animation: vibrate-2 100ms ease infinite both;
     transition: var(--easing);
     border-radius: 0 999px 999px 0;
@@ -1199,7 +1229,13 @@ ul a {
   }
 
   .header .menu > ul > li.menu-item-has-children:hover .sub-menu {
-    margin-top: 10px;
+    margin-top: 20px;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .header .menu > ul > li.menu-item-has-children:focus-visible .sub-menu {
+    margin-top: 20px;
     visibility: visible;
     opacity: 1;
   }
@@ -1209,6 +1245,18 @@ ul a {
 
   .dropdown:hover .sub-menu {
     visibility: visible;
+  }
+
+  .menu-link:hover,
+  .sub-menu-link:hover {
+    color: var(--pink-700);
+    transition: var(--easing);
+  }
+
+  #focus-me:focus-within .sub-menu {
+    margin-top: 20px;
+    visibility: visible;
+    opacity: 1;
   }
 }
 
