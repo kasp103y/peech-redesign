@@ -252,11 +252,11 @@
                 <br />
                 Kom forbi og få en kop kaffe, en snak og kyndig vejledning. Du
                 kan finde os på Guldbergsgade 25, kld tv. (hjørnet af Peter
-                Fabers Gade) 2200 København N. <br> Du finder også neglekunstneren
-                Ida Nailed It i vores cute nye lokaler.
+                Fabers Gade) 2200 København N. <br />
+                Du finder også neglekunstneren Ida Nailed It i vores cute nye
+                lokaler.
               </p>
               <article class="vores-butik">
-                
                 <article class="open-time p">
                   <ul>
                     <li class="day">
@@ -289,22 +289,26 @@
                     </li>
                   </ul>
                   <address>
-                 
                     <p>Guldbergsgade 25, kld tv</p>
                     <p>2200 København N</p>
                   </address>
                 </article>
-               
+              </article>
             </article>
 
-            <!-- MANGLER BILLEDER HER-->
-
-
-
+            <article class="billeder-grid">
+              <article class="img-grid">
+                <figure><img src="billeder/om/butik1.webp" alt="" /></figure>
+                <figure><img src="billeder/om/butik2.webp" alt="" /></figure>
+                <figure><img src="billeder/om/butik.webp" alt="" /></figure>
+              </article>
+            </article>
           </section>
         </section>
       </section>
     </main>
+
+    
   </body>
 </html>
 
@@ -321,6 +325,20 @@
 
   .sektion-2 {
     line-height: var(--spacing-8);
+  }
+
+  .img-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-4);
+  }
+
+  .img-grid figure:nth-child(2) {
+    grid-column-start: 2;
+  }
+
+  .img-grid figure:nth-child(3) {
+    grid-column-start: span 2;
   }
 
   @media (min-width: 700px) {
@@ -369,6 +387,25 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       margin-top: 2rem;
+    }
+
+    .img-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--spacing-4);
+      margin-top: 12rem;
+    }
+
+    .img-grid figure:nth-child(2) {
+      grid-column-start: 2;
+    }
+
+    .img-grid figure:nth-child(3) {
+      grid-column-start: span 2;
+    }
+
+    .butik {
+      margin-right: var(--spacing-10);
     }
   }
 </style>

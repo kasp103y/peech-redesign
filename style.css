@@ -594,17 +594,20 @@ header {
 
 .button-outlined {
   background-color: transparent;
-  border: var(--border-pink-thin);
+  border: 1px solid var(--pink-300);
   color: var(--pink-800);
-  width: 12rem;
+  width: 14rem;
   padding-block: var(--spacing-3);
   padding-inline: var(--spacing-4);
-  font-size: var(--font-size-sm);
-  font-family: "poppins", sans-serif;
+  font-size: var(--font-size-base);
+  font-weight: bold;
+  font-family: "shocka-bold", serif;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   text-decoration: none;
+  box-shadow: var(--shadow);
+  margin-top: var(--spacing-3);
 }
 
 .peechy-points {
@@ -1124,7 +1127,9 @@ ul li a {
 /* Cookie card */
 
 .cookie-link {
-  color: var(--blue-900);
+  font-family: shocka;
+  font-size: var(--heading-xl);
+  color: var(--heading);
   text-decoration: underline;
   display: flex;
   align-items: center;
@@ -1143,6 +1148,13 @@ ul li a {
   left: 0;
   background-color: var(--sand-300);
   transition: var(--trans);
+}
+
+.lead-var {
+  font-family: "shocka", sans-serif;
+  font-size: var(--font-size-lg);
+  color: var(--primary);
+  font-weight: var(--bold);
 }
 
 .hidden {
@@ -1325,6 +1337,15 @@ ul li a {
 
   /* COOKIES */
 
+  .cookie-link {
+    color: var(--paragraph);
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    transition: var(--trans);
+  }
+
   .cookie-card {
     width: 100vw;
     display: flex;
@@ -1333,14 +1354,23 @@ ul li a {
     height: 150px;
     top: 85%;
     left: 0;
-    background-image: url(billeder/blob-bg.svg);
-    background-position: 30%;
+    background-image: url(billeder/Footer.svg);
+    background-position: 80%;
     transition: var(--trans);
   }
   .cookies {
     display: flex;
     color: var(--blue-900);
     gap: 3rem;
+  }
+
+  .hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .none {
+    display: none;
   }
 }
 
