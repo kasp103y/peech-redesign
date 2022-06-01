@@ -263,10 +263,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  backdrop-filter: brightness(60%);
+  background-position-y: -30px;
 }
 
 .mega-menu-img > a > p {
-  color: var(--pink-500);
+  color: var(--pink-800);
 }
 
 .mobile-menu-trigger,
@@ -841,10 +843,11 @@ ul li {
   list-style: none;
 }
 
-ul a {
+ul li a {
   text-decoration: none;
   color: var(--nav-links);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-sm);
+  font-family: "poppins", sans-serif;
 }
 
 .nav {
