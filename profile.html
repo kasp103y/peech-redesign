@@ -24,8 +24,8 @@
     <!-- header start -->
     <header>
       <section class="top-header">
-        <p class="small-text">Diskret levering</p>
         <p class="small-text">Fri fragt på ordre over 450 kr</p>
+        <p class="small-text">Diskret levering</p>
         <p class="small-text desktop-only">Pftalfri produkter</p>
       </section>
       <section class="header">
@@ -33,9 +33,7 @@
           <section class="row v-center">
             <section class="header-item item-left">
               <h1 class="logo">
-                <a href="index.html"
-                  ><img src="billeder/logo.png" alt="Peech logo"
-                /></a>
+                <a href="#"><img src="billeder/logo.png" alt="" /></a>
               </h1>
             </section>
             <!-- Menu start here -->
@@ -151,12 +149,10 @@
                     </div>
                   </li>
                   <li>
-                    <a class="menu-link" href="univers.html"
-                      >Sex univers <i></i
-                    ></a>
+                    <a class="menu-link" href="#">Sex univers <i></i></a>
                   </li>
                   <li>
-                    <a class="menu-link" href="event.html">Events <i></i></a>
+                    <a class="menu-link" href="#">Events <i></i></a>
                   </li>
                 </ul>
               </nav>
@@ -165,12 +161,14 @@
             <section class="header-item item-right">
               <ul>
                 <li>
-                  <a href="profile.html"><i class="fa-regular fa-user"></i></a>
+                  <button class="invisi-btn">
+                    <i class="fa-regular fa-user"></i>
+                  </button>
                 </li>
                 <li>
-                  <a href="kurv.html"
-                    ><i class="fa-solid fa-cart-shopping"></i
-                  ></a>
+                  <button class="invisi-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </button>
                 </li>
               </ul>
               <!--Mobil trigger-->
@@ -186,70 +184,55 @@
     <!--Header slut-->
 
     <main id="main">
-      <!-- Cookies start -->
+      <section class="main-grid">
+        <section class="content-wrapper">
+          <section class="log-in">
+            <article class="log-form">
+              <h1 class="center heading-lg">
+                Login <i class="fa-solid fa-heart"></i>
+              </h1>
+              <form ">
+                <div class="container-log-in">
+                  <label class="heading-base" for="uname"
+                    ><b>Brugernavn</b></label
+                  >
+                  <input
+                    class="text-box"
+                    type="text"
+                    placeholder="Skriv brugernavn"
+                    name="uname"
+                    required
+                  />
 
-      <section class="cookie-card" id="focus-first">
-        <article class="cookies">
-          <article>
-            <p class="lead-var">Kan vi friste med et par cookies...?</p>
-            <a href="#" class="cookie-link">Læs vores cookie politik her </a>
-          </article>
-          <div class="cookie_buttons">
-            <a href="#" class="button-primary button" id="accepter">Accepter</a>
-            <a href="#" class="button-outlined button" id="afvis">Afvis</a>
-          </div>
-        </article>
-      </section>
+                  <label class="heading-base" for="psw"><b>Password</b></label>
+                  <input
+                    class="text-box"
+                    type="password"
+                    placeholder="Skriv Password"
+                    name="psw"
+                    required
+                  />
 
-      <!-- Cookies slut -->
-      <section class="hero">
-        <article class="hero-content">
-          <h1 class="heading-xxxl justify-center splash-logo">
-            <img src="billeder/logo.png" alt="Peech logo" />
-          </h1>
-          <article class="flex tagline">
-            <p class="heading-md">Sunhed</p>
-            <p class="heading-md">Intim</p>
-            <p class="heading-md">Velvære</p>
-          </article>
-        </article>
-        <article class="flex justify-center">
-          <a
-            href="shop.html"
-            id="focus-first"
-            class="button button-primary"
-            rel="noopener"
-            >Shop legetøj</a
-          >
-        </article>
-        <div class="arrow">
-          <svg
-            width="18.66"
-            height="38"
-            viewBox="0 0 28 57"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10.699 43.1527C10.699 41.9246 10.699 40.5736 10.699 39.3455C10.8223 28.5379 11.069 17.6074 11.1924 6.79983C11.1924 5.57169 11.1924 4.46636 11.3157 3.23822C11.4391 1.64164 11.8091 -0.32338 13.906 0.0450613C14.7695 0.167875 15.7563 2.01008 15.8796 3.11541C16.373 12.2036 16.7431 21.169 17.1131 30.2573C17.2365 32.3451 17.1131 34.4329 18.2233 36.6436C19.7035 34.1873 20.937 31.6082 22.5405 29.2748C23.2806 28.1694 25.1309 26.9413 26.241 27.1869C28.4613 27.6782 28.2146 30.1345 27.4745 31.6082C24.2674 38.9771 21.0603 46.4687 17.2365 53.5919C14.7695 58.136 11.069 58.136 8.60202 53.5919C5.27157 47.574 2.80458 41.0649 0.0908852 34.8014C-0.279164 34.0645 0.584282 32.8364 0.830981 31.8539C1.81778 32.2223 3.29798 32.2223 3.79138 32.9592C5.02487 34.4329 5.76497 36.398 6.75177 38.1174C7.73857 39.9596 8.72536 41.8018 9.71216 43.5212C9.95885 43.2756 10.3289 43.1527 10.699 43.1527Z"
-              fill="#10010A"
-            />
-          </svg>
-        </div>
+                  <div class="container-husk">
+                    <p class="p">Glemt <a href="#">password?</a></p>
+                    <label class="p">
+                      <input
+                        type="checkbox"
+                        checked="checked"
+                        name="remember"
+                      />
+                      Husk mig
+                    </label>
+                  </div>
 
-        <div class="custom-shape-divider-bottom-1653556236">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-              class="shape-fill"
-            ></path>
-          </svg>
-        </div>
+                  <button class="button-primary button" type="submit">
+                    Login
+                  </button>
+                </div>
+              </form>
+            </article>
+          </section>
+        </section>
       </section>
 
       <section class="peechy-points">
@@ -454,474 +437,6 @@
 
               <a class="button button-primary" href="#">Tjen Peechy points</a>
               <a class="button button-outlined" href="#">Brug Peechy points</a>
-            </article>
-          </section>
-        </section>
-      </section>
-      <section class="main-grid">
-        <section class="content-wrapper">
-          <section class="section-1 mission section">
-            <article class="mission-content">
-              <h2 class="heading-xl">Vores mission</h2>
-              <p class="p">
-                Hos Peech danner
-                <span class="emphasis">sundhed og velvære rammerne</span> for
-                vores vision. Vi vil gerne være med til at nuancere opfattelsen
-                af sex og sexlegetøj.
-              </p>
-              <a href="#" class="button-primary button">Læs om os</a>
-            </article>
-            <figure class="graphic">
-              <svg
-                width="235"
-                height="444"
-                viewBox="0 0 353 667"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_383_9078)">
-                  <path
-                    d="M104.11 64.2307C91.28 72.7607 92.2 102.551 93.19 116.511C96.34 147.141 99.5899 177.771 102.13 208.461C104.13 230.171 106.55 260.691 108.99 282.031C109.61 286.501 109.91 291.251 111.2 295.541C111.912 296.867 112.714 298.144 113.6 299.361C124.48 314.261 136.39 328.431 148.08 342.701L148.55 343.271L147.84 343.381C126.6 346.381 100.56 341.571 89.5199 321.201C86.0374 314.683 83.9562 307.51 83.4099 300.141C80.9861 278.176 83.7255 255.949 91.4099 235.231C93.8984 228.331 97.0184 221.677 100.73 215.351C91.58 231.221 86.3499 249.161 84.0299 267.261C83.4299 272.501 83.0999 278.371 83.0299 283.671C83.0799 287.151 83.16 291.181 83.43 294.621C83.77 297.671 84.11 302.501 84.73 305.491C88.36 327.391 104.36 340.151 125.9 342.731C133.134 343.669 140.462 343.612 147.68 342.561L147.43 343.231C139.55 333.761 131.73 324.231 124.04 314.611C120.22 309.781 116.39 304.961 112.78 299.931C111.849 298.661 111.014 297.324 110.28 295.931C108.9 291.391 108.67 286.781 108.03 282.131C102.95 233.881 99.8099 183.131 94.5299 134.931C92.5299 116.671 90.4599 97.8107 94.9099 79.7507C96.5399 73.9907 98.76 67.5007 104.1 64.2207L104.11 64.2307Z"
-                    fill="#CE7C00"
-                  />
-                  <path
-                    d="M141.05 144.83C140.05 168.91 139.59 193.34 143.69 217.16C149.49 240.71 151.29 265.04 151.62 289.24C167.62 318.54 185.2 350.24 204.89 378.35C208.23 383.07 211.67 387.73 215.39 392.15C219.19 396.4 222.99 401.15 228.39 403.42C222.98 401.24 219.1 396.5 215.24 392.31C211.45 387.93 207.94 383.31 204.53 378.63C184.53 350.23 167.37 319.93 150.72 289.47C150.45 277.35 150.06 265.14 148.89 253.04C147.824 240.997 145.875 229.048 143.06 217.29C139.06 193.36 139.71 168.95 141.06 144.83H141.05Z"
-                    fill="#CE7C00"
-                  />
-                  <path
-                    d="M339.19 368.78C351.69 359.96 354.33 344.07 349.5 330.22C347.219 323.417 343.392 317.236 338.32 312.16C334.12 306.28 331.71 299.37 329 292.74C310.34 242.32 296.69 190.12 281.73 138.52C279.05 130.62 275.79 122.91 272.4 115.29C271.4 113.12 270.4 110.96 269.34 108.83C267.65 105.76 266.44 102.25 263.46 100.21C252.573 92.8821 241.105 86.4573 229.17 81.0003C222.23 77.3503 209.99 88.4602 204.88 92.8402C199.541 97.5998 194.635 102.824 190.22 108.45C189.175 109.902 188.207 111.407 187.32 112.96C184.22 117.37 180.8 121.55 177.41 125.72C165.24 140.48 152.75 154.95 140.21 169.38C152.62 154.84 165 140.26 177.03 125.38C180.4 121.19 183.79 117.02 186.87 112.63C187.87 111.19 188.66 109.42 189.77 108.09C197.088 98.5729 205.862 90.2707 215.77 83.4903C219.3 81.3803 223.42 78.8602 227.7 79.6802C232.79 81.5102 237.53 84.2102 242.32 86.6802C249.93 90.8502 257.61 94.9803 264.66 100.07C267.25 102.22 268.52 105.56 270.09 108.42C273.28 114.86 276.09 121.42 278.83 128.11C280.675 132.538 282.284 137.061 283.65 141.66C298.18 192.13 311.41 243.18 329.52 292.52C333.05 301.35 336.28 310.52 343.35 317.28C346.159 321.186 348.345 325.504 349.83 330.08C354.55 343.99 351.83 360.08 339.17 368.76L339.19 368.78Z"
-                    fill="#CE7C00"
-                  />
-                  <path
-                    d="M228.36 0C232.057 1.88411 235.078 4.86868 237.007 8.54218C238.936 12.2157 239.678 16.3971 239.13 20.51C239 21.66 238.68 22.8 238.44 23.93C238.44 22.76 238.65 21.62 238.65 20.47C238.777 16.4706 237.902 12.503 236.105 8.92787C234.308 5.35278 231.646 2.28376 228.36 0Z"
-                    fill="#CE7C00"
-                  />
-                  <path
-                    d="M154.48 121.32C164.62 123.14 174.93 120.56 184.28 116.67C183.17 117.31 182.04 117.93 180.89 118.52C172.81 122.34 163.14 124.18 154.48 121.32Z"
-                    fill="#CE7C00"
-                  />
-                  <path
-                    d="M225.93 79.8491C231.93 76.9791 233.93 69.7691 234.73 63.6591C234.84 62.7291 234.92 61.7991 235.07 60.8691C235.77 67.9591 233.76 77.6891 225.93 79.8691V79.8491Z"
-                    fill="#CE7C00"
-                  />
-                  <path
-                    d="M238.98 11.9609C257.89 15.4709 276.85 19.0809 295.23 24.8909C298.336 25.8292 301.333 27.0964 304.17 28.6709C304.951 29.1068 305.605 29.7372 306.07 30.5009C306.74 31.8709 308.43 35.6309 309.07 37.0709C319.07 59.8209 329.67 84.8409 339.18 107.891C328.96 85.1109 318.18 60.2109 308.18 37.4809C307.54 36.0409 305.88 32.3009 305.18 30.9309C304.795 30.3275 304.265 29.8292 303.64 29.4809C300.873 27.9332 297.95 26.6829 294.92 25.7509C276.62 19.9109 257.73 15.9909 238.92 11.9609H238.98Z"
-                    fill="#CE7C00"
-                  />
-                  <path
-                    d="M275.93 122.29C279.293 119.01 282.452 115.527 285.39 111.86C286.74 110.02 288.32 108.11 288.86 105.86C288.92 105.309 288.92 104.752 288.86 104.2V104.15H289.21L289.34 105.91L289.6 109.42V109.36C299.79 135.71 309.93 162.56 313.65 190.7C319.618 223.174 327.634 255.238 337.65 286.7C339.22 291.12 340.65 295.7 343.05 299.7C347.85 307.96 348.67 317.84 348.61 327.19C348.53 317.92 347.55 308.02 342.68 299.93C341.429 297.912 340.387 295.771 339.57 293.54C336.98 286.94 334.88 280.16 332.81 273.38C324.88 246.19 317.57 218.76 312.71 190.83C309.17 162.69 299.1 135.92 289.17 109.5V109.43L288.96 105.91L288.86 104.15H289.21V104.25C289.275 104.809 289.275 105.372 289.21 105.93C288.6 108.27 287.01 110.13 285.59 112C282.595 115.629 279.379 119.068 275.96 122.3L275.93 122.29Z"
-                    fill="#CE7C00"
-                  />
-                  <path
-                    d="M176.39 334.1C190.71 315.65 201.17 294.36 208.94 272.4C209.86 270.05 210.87 266.52 211.67 264.09C213.31 259.37 215.08 252.09 216.38 247.23C218.703 237.275 220.518 227.209 221.82 217.07C222.12 214.15 222.88 206.96 223.2 203.99C222.98 206.99 222.42 214.22 222.2 217.11C221.114 227.304 219.445 237.427 217.2 247.43C216.38 250.43 214.73 257.3 213.87 260.18C213.21 262.27 211.87 266.48 211.25 268.57C210.45 271.46 207.83 278.07 206.8 280.97C199.16 299.92 189.54 318.39 176.36 334.1H176.39Z"
-                    fill="#CE7C00"
-                  />
-                  <path
-                    d="M218.29 151.551C215.81 166.041 218.12 180.991 221.9 195.061C231.9 230.511 254.35 261.151 279.71 287.331C283.52 291.241 291.49 298.971 295.53 302.671C291.37 299.031 283.3 291.541 279.36 287.671C253.51 261.781 230.89 230.971 221.16 195.261C217.5 181.091 215.45 166.041 218.29 151.551Z"
-                    fill="#CE7C00"
-                  />
-                  <path
-                    d="M208.06 276.439C225.492 280.019 242.731 284.481 259.71 289.809C276.64 295.249 293.54 301.369 308.81 310.639C313.118 313.273 317.093 316.415 320.65 319.999C323.15 323.002 325.487 326.136 327.65 329.389C337.86 343.979 346.77 362.389 335.41 378.989C330.41 386.409 323.13 391.989 315.64 396.699C326.44 389.569 337.7 379.989 339.75 366.499C341.81 350.729 331.75 336.679 323.02 324.499C322.17 323.299 320.86 321.769 319.91 320.649C298.28 298.899 238.67 283.719 208.02 276.439H208.06Z"
-                    fill="#CE7C00"
-                  />
-                  <path
-                    d="M182.18 343.789C191.6 343.219 201.02 342.889 210.44 342.389C219.23 341.859 228.14 341.849 236.82 340.259C237.397 340.151 237.948 339.93 238.44 339.609C237.97 339.975 237.433 340.247 236.86 340.409C228.28 342.639 219.29 342.769 210.49 343.409C201.05 343.799 191.62 344.039 182.18 343.809V343.789Z"
-                    fill="#CE7C00"
-                  />
-                  <path
-                    d="M226.11 341.881C233.6 343.061 247.18 347.381 247.7 356.401C245.97 348.151 233.17 344.401 226.11 341.881Z"
-                    fill="#CE7C00"
-                  />
-                  <path
-                    d="M246.06 388.101C255.77 394.671 263.46 403.851 270.06 413.431C296.19 452.821 302.89 501.661 302.65 548.041C302.416 559.725 302.884 571.413 304.05 583.041C304.49 589.041 306.28 594.561 306.81 600.371C308.35 626.031 295.11 651.171 270.19 660.051C266.032 661.529 261.761 662.67 257.42 663.461C240.42 666.771 221.56 669.221 205.42 661.261C200.149 658.538 195.543 654.687 191.93 649.981C185.64 642.061 176.22 630.771 169.63 622.881C143.85 591.171 117.17 559.621 97.2 523.781C94.3968 518.623 92.1219 513.196 90.4099 507.581H90.7999C85.1699 525.231 75.6899 542.581 60.5199 553.761C58.3369 555.306 56.0442 556.689 53.6599 557.901C56.0343 556.674 58.317 555.277 60.49 553.721C75.55 542.521 84.9099 525.101 90.4099 507.471L90.6 506.811C92.3355 512.622 94.6819 518.234 97.6 523.551C117.6 559.301 144.34 590.761 170.17 622.391C176.85 630.271 186.17 641.481 192.54 649.451C196.087 654.046 200.605 657.802 205.77 660.451C221.63 668.261 240.36 665.761 257.12 662.451C261.408 661.65 265.63 660.527 269.75 659.091C294.31 650.411 307.36 625.661 305.9 600.391C305.38 594.641 303.61 589.151 303.18 583.081C302.032 571.418 301.588 559.697 301.85 547.981C302.2 501.691 295.54 452.981 269.78 413.501C263.22 403.891 255.61 394.671 245.94 388.051L246.06 388.101Z"
-                    fill="#CE7C00"
-                  />
-                  <path
-                    d="M127.61 443.721C147.917 463.141 167.603 483.177 186.67 503.831C200.86 519.411 214.92 535.181 227.34 552.221C231.526 557.872 235.238 563.859 238.44 570.121C235.089 563.948 231.239 558.058 226.93 552.511C218.52 541.281 209.32 530.651 200.06 520.121C176.69 493.921 152.28 468.671 127.59 443.721H127.61Z"
-                    fill="#CE7C00"
-                  />
-                  <path
-                    d="M198.57 517.73C194.04 510.93 190.36 502.05 193.02 493.88C193.445 492.748 194.038 491.686 194.78 490.73C190.36 499.36 194.89 509.62 198.57 517.73Z"
-                    fill="#CE7C00"
-                  />
-                  <path
-                    d="M192.54 496.27C190.84 500.14 185.46 499.51 182.25 498.09C181.095 497.6 179.996 496.99 178.97 496.27C179.58 496.43 180.17 496.62 180.75 496.82C184.49 497.92 189.49 499.66 192.54 496.27Z"
-                    fill="#CE7C00"
-                  />
-                  <path
-                    d="M145.6 461.63C144.728 452.055 144.681 442.423 145.46 432.84C145.94 429.75 145.88 426.19 147.76 423.57C147.332 424.24 147.053 424.994 146.94 425.78C146.01 431.28 146.11 436.89 145.94 442.46C145.85 447.87 145.76 456.27 145.6 461.63Z"
-                    fill="#CE7C00"
-                  />
-                  <path
-                    d="M0 557.901C22.82 539.221 51.47 516.221 74.38 497.761C92.28 480.621 108.82 462.091 126.11 444.341C135.28 435.141 143.85 425.221 153.87 416.951C154.438 416.681 155.085 416.628 155.69 416.801C160.96 417.571 166.11 418.941 171.27 420.211C166.67 419.131 162.06 418.071 157.41 417.311C156.54 417.161 155.662 417.061 154.78 417.011C154.65 416.99 154.516 416.997 154.389 417.032C154.261 417.066 154.142 417.127 154.04 417.211C144.22 425.661 135.71 435.601 126.67 444.871C109.48 462.751 93 481.381 75 498.471C52 516.881 23.18 539.711 0 557.901Z"
-                    fill="#CE7C00"
-                  />
-                  <path
-                    d="M3.36011 514.239C10.5723 502.563 18.905 491.618 28.2401 481.559C31.39 478.229 34.7825 475.137 38.39 472.309C52.81 461.139 67.8601 450.679 80.7401 437.699C87.1301 431.269 93.1301 424.289 97.4301 416.269C101.55 408.169 104.06 399.269 108.2 391.119C112.2 382.889 116.68 374.749 123.05 368.119C129.42 361.489 138.52 357.119 147.76 359.039C144.381 358.486 140.924 358.633 137.604 359.47C134.285 360.308 131.172 361.819 128.46 363.909C114.17 375.299 107.63 393.909 101.11 410.419C96.9601 421.199 89.4701 430.279 81.4401 438.419C68.4401 451.419 53.4401 461.929 38.8601 472.929C24.5101 484.219 13.5001 499.219 3.36011 514.259V514.239Z"
-                    fill="#CE7C00"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_383_9078">
-                    <rect width="352.02" height="666.59" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </figure>
-          </section>
-          <section class="section-2 bullets section">
-            <article class="sundhed bullet-point">
-              <figure class="bullet-img">
-                <svg
-                  width="150"
-                  height="150"
-                  viewBox="0 0 325 324"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <ellipse
-                    cx="162.5"
-                    cy="162"
-                    rx="162.5"
-                    ry="162"
-                    fill="#FBD7A3"
-                  />
-                  <g clip-path="url(#clip0_474_9008)">
-                    <path
-                      d="M99.4252 225.512C87.0921 232.571 72.9835 232.571 63.5401 225.512C54.0966 218.453 52.5857 206.417 52.2079 202.802C50.3192 185.41 61.4059 172.087 67.3175 164.953C71.7748 159.559 86.4877 141.789 112.646 138.458C137.426 135.316 155.746 147.296 161.752 151.705C165.737 154.639 188.836 171.633 190.083 200.91C191.329 230.186 170.1 248.487 161.752 255.792C153.763 262.775 143.828 271.461 129.644 270.932C119.464 270.553 104.695 265.254 99.4252 252.007C96.9699 245.286 96.9699 237.911 99.4252 231.189"
-                      fill="#64143F"
-                    />
-                    <path
-                      d="M229.594 94.4387C241.908 87.3798 256.035 87.3798 265.479 94.4387C274.922 101.498 276.433 113.534 276.811 117.149C278.7 134.54 267.613 147.863 261.702 154.998C257.225 160.392 242.512 178.162 216.373 181.493C191.574 184.634 173.254 172.655 167.267 168.245C163.282 165.312 140.183 148.318 138.936 119.041C137.69 89.7643 158.9 71.464 167.267 64.1591C175.237 57.1758 185.172 48.4893 199.375 49.0192C209.536 49.3977 224.324 54.602 229.594 67.944C232.034 74.6676 232.034 82.0377 229.594 88.7613"
-                      fill="#64143F"
-                    />
-                    <path
-                      d="M99.9728 97.0497C92.928 84.7107 92.928 70.5549 99.9728 61.0925C107.018 51.6301 119.049 50.1161 122.637 49.7376C139.994 47.8452 153.291 58.954 160.411 64.8775C165.794 69.3437 183.547 84.1051 186.853 110.297C189.988 135.145 178.032 153.502 173.632 159.502C170.704 163.495 153.744 186.64 124.526 187.889C95.3077 189.138 77.0441 167.866 69.7537 159.502C62.7844 151.496 54.1153 141.542 54.6442 127.329C55.0219 117.148 60.2158 102.33 73.5311 97.0497C80.2412 94.604 87.5966 94.604 94.3067 97.0497"
-                      fill="#F0FEEF"
-                    />
-                    <path
-                      d="M230.784 227.48C237.828 239.838 237.828 253.974 230.784 263.437C223.739 272.899 211.727 274.413 208.119 274.792C190.762 276.684 177.485 265.575 170.345 259.652C164.981 255.186 147.228 240.424 143.904 214.232C140.768 189.384 152.724 171.027 157.125 165.028C160.052 161.035 177.012 137.89 206.231 136.641C235.449 135.392 253.712 156.663 261.003 165.028C267.972 173.033 276.641 182.987 276.112 197.2C275.734 207.4 270.446 222.2 257.225 227.48C250.518 229.94 243.157 229.94 236.45 227.48"
-                      fill="#F0FEEF"
-                    />
-                    <path
-                      d="M165.133 210.598C192.775 210.598 215.183 188.145 215.183 160.448C215.183 132.75 192.775 110.297 165.133 110.297C137.491 110.297 115.083 132.75 115.083 160.448C115.083 188.145 137.491 210.598 165.133 210.598Z"
-                      fill="#69D2D7"
-                    />
-                    <path
-                      d="M166.077 187.89C180.68 187.89 192.519 176.028 192.519 161.395C192.519 146.762 180.68 134.9 166.077 134.9C151.474 134.9 139.635 146.762 139.635 161.395C139.635 176.028 151.474 187.89 166.077 187.89Z"
-                      fill="#0E183D"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_474_9008">
-                      <rect
-                        width="225"
-                        height="226"
-                        fill="white"
-                        transform="translate(52 49)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </figure>
-              <article>
-                <p class="heading-base">Sunhed og velvære</p>
-                <p class="p-small">
-                  Alle vores produkter er
-                  <span class="emphasis">ftalatfrie og størstedelen</span>
-                  produceret af silikone i medicinsk kvalitet. Vi sælger kun
-                  produkter der er testede og godkendt til salg i hele Europa.
-                  Vores cremer er også
-                  <span class="emphasis"
-                    >økologiske, veganske og uden unødvendige
-                    tilsætninger.</span
-                  >
-                </p>
-              </article>
-            </article>
-            <article class="privatliv bullet-point">
-              <figure class="bullet-img">
-                <svg
-                  width="150"
-                  height="150"
-                  viewBox="0 0 325 324"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <ellipse
-                    cx="162.5"
-                    cy="162"
-                    rx="162.5"
-                    ry="162"
-                    fill="#FFD79A"
-                  />
-                  <ellipse
-                    cx="162.5"
-                    cy="162"
-                    rx="78.5"
-                    ry="124"
-                    fill="#64143F"
-                  />
-                  <path
-                    d="M321.212 157.266C190.892 13.8018 58.43 94.0773 4.02128 156.73C1.68047 159.425 1.97093 163.517 4.50819 166.028C149.287 309.334 273.768 228.604 321.703 165.947C323.685 163.357 323.405 159.68 321.212 157.266Z"
-                    fill="#F0FEEF"
-                  />
-                  <ellipse
-                    cx="162.5"
-                    cy="161.5"
-                    rx="78.5"
-                    ry="81.5"
-                    fill="#69D2D7"
-                  />
-                  <ellipse
-                    cx="164"
-                    cy="161.5"
-                    rx="32"
-                    ry="40.5"
-                    fill="#0E183D"
-                  />
-                </svg>
-              </figure>
-              <article>
-                <p class="heading-base center">Privatliv</p>
-                <p class="p-small center">
-                  <span class="emphasis"
-                    >Diskret, billig og hurtig levering.</span
-                  >
-                  Vi leverer både til pakkeshop og direkte til din hoveddør med
-                  Bring eller DAO. Vi bestræber os altid på at få afsendt din
-                  ordre senest hverdagen efter afgivelse og
-                  <span class="emphasis"
-                    >fragten er altid gratis hvis du køber for over 450
-                    kr.</span
-                  >
-                  <a class="p-link" href="#"
-                    >Du kan læse mere om vores levering her. ></a
-                  >
-                </p>
-              </article>
-            </article>
-            <article class="sundhed bullet-point">
-              <figure class="bullet-img">
-                <svg
-                  width="150"
-                  height="150"
-                  viewBox="0 0 324 324"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="162" cy="162" r="162" fill="#FFD79A" />
-                  <circle cx="162" cy="162" r="93" fill="#F0FEEF" />
-                  <circle cx="162.5" cy="161.5" r="71.5" fill="#69D2D7" />
-                  <g clip-path="url(#clip0_474_9037)">
-                    <path
-                      d="M162.449 248.188C166.158 244.852 170.342 246.715 173.108 244.081C174.259 242.985 174.56 241.687 174.996 239.807C176.205 234.586 174.149 230.448 173.008 226.736C171.48 221.789 171.769 217.669 172.346 209.434C173.043 199.451 175.355 199.127 176.712 187.785C177.76 178.987 178.282 174.573 176.712 170.106C174.337 163.387 169.71 160.373 170.018 153.38C170.166 150.019 171.32 148.742 171.967 148.199C174.374 146.175 178.279 147.445 179.586 147.869C183.955 149.28 187.933 152.997 189.766 157.806C191.454 162.23 190.726 166.353 189.264 174.613C187.89 182.443 186.255 185.369 187.9 189.894C188.259 190.885 189.768 195.057 192.954 195.676C196.565 196.385 199.958 192.064 200.565 191.292C202.195 189.218 204.347 185.349 203.66 170.956C203.279 162.954 203.066 158.533 201.471 152.505C198.842 142.57 196.073 141.947 190.094 128.624C185.432 118.23 182.199 110.802 182.658 101.018C182.826 97.411 183.383 85.5738 190.36 82.6679C194.955 80.7549 200.392 83.515 201.22 83.9524C203.329 85.0635 205.147 86.6698 208.019 90.7672C211.197 95.3147 213.819 100.228 215.829 105.402C219.064 113.698 221.301 119.424 223.19 127.835C224.015 131.502 227.323 147.027 225.648 168.454C223.576 194.972 215.3 212.309 213.654 215.658C208.827 225.486 204.746 233.794 197.774 236.396C196.595 236.838 193.28 237.882 190.849 240.966C190.39 241.547 187.729 245.036 188.193 249.452C188.6 253.346 191.053 254.271 192.379 257.768C194.017 262.071 192.407 266.219 190.265 271.739C188.687 275.804 184.008 287.387 172.521 293.264C169.762 294.67 166.484 296.296 163.41 295.024C159.853 293.559 158.675 289.077 157.664 284.997C156.071 278.572 157.837 278.36 157.895 263.7C157.91 259.739 157.804 254.007 161.13 249.664C161.518 249.127 161.96 248.633 162.449 248.188V248.188Z"
-                      fill="#64143F"
-                    />
-                    <path
-                      d="M164.668 75.3004C160.956 78.6362 156.765 76.7735 154.006 79.4079C152.855 80.5039 152.554 81.801 152.118 83.6812C150.909 88.9023 152.965 93.0399 154.109 96.7527C155.634 101.7 155.348 105.82 154.771 114.055C154.071 124.037 151.761 124.361 150.402 135.703C149.356 144.501 148.832 148.915 150.402 153.382C152.78 160.102 157.404 163.116 157.096 170.109C156.95 173.47 155.794 174.749 155.15 175.29C152.74 177.313 148.835 176.044 147.528 175.619C143.162 174.209 139.184 170.491 137.348 165.682C135.663 161.258 136.388 157.135 137.85 148.875C139.227 141.045 140.859 138.119 139.214 133.594C138.855 132.604 137.346 128.431 134.16 127.813C130.552 127.104 127.156 131.425 126.551 132.197C124.919 134.27 122.767 138.139 123.454 152.533C123.838 160.534 124.048 164.956 125.643 170.986C128.272 180.918 131.043 181.544 137.022 194.867C141.684 205.261 144.917 212.689 144.458 222.473C144.288 226.08 143.731 237.917 136.754 240.823C132.162 242.736 126.722 239.976 125.894 239.538C123.785 238.427 121.967 236.821 119.098 232.724C115.919 228.176 113.296 223.263 111.285 218.089C108.05 209.793 105.815 204.067 103.924 195.656C103.099 191.988 99.7937 176.464 101.467 155.036C103.541 128.521 111.817 111.182 113.46 107.833C118.288 98.0046 122.371 89.6966 129.34 87.0949C130.521 86.6525 133.837 85.6093 136.267 82.5249C136.724 81.9443 139.385 78.4552 138.923 74.0385C138.514 70.1447 136.064 69.2197 134.735 65.723C133.1 61.4195 134.707 57.2718 136.849 51.7517C138.427 47.6869 143.106 36.1036 154.593 30.2265C157.339 28.8238 160.632 27.1949 163.704 28.4668C167.263 29.9323 168.44 34.4144 169.45 38.4942C171.045 44.9193 169.277 45.1304 169.219 59.7906C169.204 63.7523 169.31 69.4836 165.987 73.8274C165.598 74.362 165.156 74.8555 164.668 75.3004V75.3004Z"
-                      fill="#64143F"
-                    />
-                    <path
-                      d="M160.722 162.26C157.938 155.246 159.197 148.043 160.689 143.919C160.974 143.129 162.006 143.142 162.296 143.931C165.067 151.461 163.789 158.438 162.294 162.273C162.001 163.024 161.019 163.01 160.722 162.26Z"
-                      fill="#64143F"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_474_9037">
-                      <rect
-                        width="125"
-                        height="267"
-                        fill="white"
-                        transform="translate(101 28)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </figure>
-              <article>
-                <p class="heading-base right">Kvalitetsikre produkter</p>
-                <p class="p-small right">
-                  <span class="emphasis"
-                    >Vi sælger kun produkter fra de bedste producenter.</span
-                  >
-                  <a class="p-link" href="#">LELO</a>,
-                  <a class="p-link" href="#">Dame products</a> &
-                  <a class="p-link" href="#">Iroha</a> er nogle af de
-                  prisvindende producenter vi har i vores katalog. Vi udvælger,
-                  opdager og afprøver konstant leverandører og produkter for at
-                  kunne tilbyde dig det bedste udvalg.
-                </p>
-              </article>
-            </article>
-          </section>
-        </section>
-      </section>
-      <section class="main-grid blob-bg">
-        <section class="content-wrapper">
-          <section class="section-3 featured section">
-            <article>
-              <h2 class="heading-xl right">Vores stimulerende bestsellers</h2>
-            </article>
-            <article class="featured-products">
-              <article class="product-card">
-                <figure class="prod-fig">
-                  <img
-                    src="content/pic/bullet_1.webp"
-                    alt="Lyserød satisfyer vibrator"
-                  />
-                </figure>
-                <article class="prod-details">
-                  <article class="name-price">
-                    <p class="product-text">Dildo</p>
-                    <p class="product-text price">599 kr.</p>
-                  </article>
-                  <p class="brand">Satisfyer</p>
-                </article>
-              </article>
-
-              <article class="product-card">
-                <figure class="prod-fig">
-                  <img
-                    src="content/pic/stor_dildo.webp"
-                    alt="Lyserød satisfyer vibrator"
-                  />
-                </figure>
-                <article class="prod-details">
-                  <article class="name-price">
-                    <p class="product-text">Dildo</p>
-                    <p class="product-text price">599 kr.</p>
-                  </article>
-                  <p class="brand">Satisfyer</p>
-                </article>
-              </article>
-              <article class="product-card">
-                <figure class="prod-fig">
-                  <img
-                    src="content/pic/dildo.webp"
-                    alt="Lyserød satisfyer vibrator"
-                  />
-                </figure>
-                <article class="prod-details">
-                  <article class="name-price">
-                    <p class="product-text">Dildo</p>
-                    <p class="product-text price">599 kr.</p>
-                  </article>
-                  <p class="brand">Satisfyer</p>
-                </article>
-              </article>
-            </article>
-            <section class="cta-shop">
-              <a href="shop.html" class="button button-primary">Gå til shop</a>
-            </section>
-          </section>
-        </section>
-      </section>
-      <section class="main-grid">
-        <section class="content-wrapper">
-          <section class="journal section section-4">
-            <article class="journal">
-              <h2 class="heading-xl">
-                Sex universet hvor du kan blive klogere
-              </h2>
-              <article class="featured-artikler">
-                <!--  Artikle-kort -->
-                <article class="article-card">
-                  <figure class="article-img">
-                    <img
-                      src="content/pic/bullet_2.webp"
-                      alt="Bullet af peech"
-                    />
-                  </figure>
-                  <article class="artikel-beskriv">
-                    <h3 class="artikel-lead heading-md">
-                      “Sådan finder du G-punktet alene, eller med partner(e)”
-                    </h3>
-                    <p class="artikel-p p-small">
-                      Det er en rigtig god vane at rense dit seclegetøj, når du
-                      er færdig med at bruge det. Ikke bare er det så klar til
-                      næste gang du bruger det ....
-                    </p>
-                  </article>
-                  <a href="#" class="artikel-btn button-primary button"
-                    >Læs mere om onani</a
-                  >
-                </article>
-                <!--  Artikle-kort slut-->
-                <!--  Artikle-kort -->
-                <article class="article-card">
-                  <figure class="article-img">
-                    <img
-                      src="content/pic/bullet_2.webp"
-                      alt="Bullet af peech"
-                    />
-                  </figure>
-                  <article class="artikel-beskriv">
-                    <h3 class="artikel-lead heading-md">
-                      “Sådan vasker du dit sexlegetøj”
-                    </h3>
-                    <p class="artikel-p p-small">
-                      I Peech skal det ikke være tabubelagt at købe og bruge
-                      sexlegetøj, men fordi det har været (og stadig er) sådan i
-                      så lang tid, har du måske ikke så meget erfaring ....
-                    </p>
-                  </article>
-                  <a href="#" class="artikel-btn button-primary button"
-                    >Giv legetøjet en renser</a
-                  >
-                </article>
-                <!--  Artikle-kort slut-->
-                <!--  Artikle-kort -->
-                <article class="article-card">
-                  <figure class="article-img">
-                    <img
-                      src="content/pic/bullet_2.webp"
-                      alt="Bullet af peech"
-                    />
-                  </figure>
-                  <article class="artikel-beskriv">
-                    <h3 class="artikel-lead heading-md">
-                      “Sådan får du din partner til at bruge sexlegetøj”
-                    </h3>
-                    <p class="artikel-p p-small">
-                      Bedre kommunikation, giver bedre sex. At kunne udtrykke
-                      hvad du er helt vild med, kan lide og slet ikke kan lide
-                      er så vigtigt i seksuelle relationer ....
-                    </p>
-                  </article>
-                  <a href="#" class="artikel-btn button-primary button"
-                    >Få legetøjet med i sengen</a
-                  >
-                </article>
-                <!--  Artikle-kort slut-->
-              </article>
-            </article>
-          </section>
-        </section>
-      </section>
-      <section class="main-grid blob-bg-omtalt">
-        <section class="omtalt-wrapper">
-          <section class="section section-5 omtalt">
-            <article class="omtalt-article">
-              <article class="center-h2">
-                <h2 class="p-lead">Omtalt i</h2>
-              </article>
-              <div class="marquee">
-                <div class="track">
-                  <div class="content">
-                    <ul class="animated-wrapper omtalt-list">
-                      <li class="omtalt-logo animated one">POLITIKEN</li>
-                      <li class="omtalt-logo animated two">HEARTBEATS</li>
-                      <li class="omtalt-logo animated three">FEMINA</li>
-                      <li class="omtalt-logo animated four">BØRSEN</li>
-                      <li class="omtalt-logo animated five">EUROWOMAN</li>
-                      <li class="omtalt-logo animated six">COSTUME</li>
-                      <li class="omtalt-logo animated seven">ELLE</li>
-                      <li class="omtalt-logo animated eight">TV2</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
             </article>
           </section>
         </section>
