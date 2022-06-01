@@ -1080,6 +1080,40 @@ ul a {
   }
 }
 
+/* Cookie card */
+
+.cookie-link {
+  font-family: ;
+  color: var(--blue-900);
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  transition: var(--trans);
+}
+
+.cookie-card {
+  width: 100vw;
+  padding-block: var(--spacing-4);
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  height: 300px;
+  top: 75%;
+  left: 0;
+  background-color: var(--sand-300);
+  transition: var(--trans);
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.none {
+  display: none;
+}
+
 /************************************************************* Mobil slut ****************************************************************************/
 
 /************************************************************* Tablet styling ****************************************************************************/
@@ -1224,10 +1258,36 @@ ul a {
     display: flex;
     gap: var(--spacing-6);
   }
+
+  /* COOKIES */
+
+  .cookie-card {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    height: 150px;
+    top: 85%;
+    left: 0;
+    background-image: url(billeder/blob-bg.svg); 
+    background-position: 30%; 
+    transition: var(--trans);
+ 
+  }
+  .cookies {
+    display: flex;
+    color: var(--blue-900);
+    gap: 3rem; 
+  
+  }
+
+ 
 }
 
-/************************************************************* Desktop slut ****************************************************************************/
-/**********************************HOVERS**************/
+
+/************************************************************* Desktop slut **************************************************************************
+
+/******************************************************
 @media (min-width: 600px) {
   .button:hover,
   .logo:hover {
@@ -1238,13 +1298,11 @@ ul a {
   .points-btn:hover {
     scale: 1.2;
   }
-
   .header .menu > ul > li.menu-item-has-children:hover .sub-menu {
     margin-top: 20px;
     visibility: visible;
     opacity: 1;
   }
-
   .header .menu > ul > li.menu-item-has-children:focus-visible .sub-menu {
     margin-top: 20px;
     visibility: visible;
@@ -1253,23 +1311,19 @@ ul a {
   .header .menu > ul > li:hover > a {
     position: relative;
   }
-
   .dropdown:hover .sub-menu {
     visibility: visible;
   }
-
   .menu-link:hover,
   .sub-menu-link:hover {
     color: var(--pink-700);
     transition: var(--easing);
   }
-
   #focus-me:focus-within .sub-menu {
     margin-top: 20px;
     visibility: visible;
     opacity: 1;
   }
-
   .skip-nav {
     opacity: 0;
   }
@@ -1277,8 +1331,9 @@ ul a {
     opacity: 1;
   }
 }
+}
 
-/****************************KEYFRAMES*****************/
+/****************************KEYFRAMES***************
 @keyframes vibrate-2 {
   0% {
     -webkit-transform: translate(0);
@@ -1305,7 +1360,6 @@ ul a {
     transform: translate(0);
   }
 }
-
 @keyframes bounce_kf {
   0% {
     transform: translateY(0);
@@ -1314,7 +1368,6 @@ ul a {
     transform: translateY(20px);
   }
 }
-
 @keyframes rotate_kf {
   0% {
     transform: rotate(0deg);
