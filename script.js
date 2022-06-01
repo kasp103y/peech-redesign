@@ -1,41 +1,21 @@
-/* const burger = document.querySelector(".burger");
-const burgerContent = document.querySelector(".burger-content"); */
 const noticeMeSenpai = document.querySelector(".notice");
-
-/* burger.addEventListener("click", showBurger); */
-window.addEventListener("scroll", removeArrow);
-
-/* function showBurger() {
-  burger.classList.toggle("open");
-  burgerContent.classList.toggle("open");
-}
- */
-function removeArrow() {
-  noticeMeSenpai;
-  noticeMeSenpai.classList.toggle("hide", window.scrollY > 0);
-  console.log("hej");
-}
-
-/* const dropDownBtn = document.querySelector(".dropdown");
-dropDownBtn.addEventListener("mouseover", dropDown);
-dropDownBtn.addEventListener("mouseleave", dropDownHide);
-dropDownBtn.addEventListener("click", dropDown);
-window.addEventListener("click", dropDownHide);
-
-function dropDown() {
-  document.querySelector(".dropdown-content").classList.add("show");
-}
-
-function dropDownHide() {
-  document.querySelector(".dropdown-content").classList.remove("show");
-} */
-
+const peechBtn = document.querySelector(".points-btn");
+const peechKryds = document.querySelector(".kryds");
+const peechPopUp = document.querySelector(".peechy-pop-up");
 const menu = document.querySelector(".menu");
 const menuMain = document.querySelector(".menu-main");
 const closeMenu = document.querySelector(".mobile-menu-close");
 const goBack = document.querySelector(".go-back");
 const menuTrigger = document.querySelector(".mobile-menu-trigger");
 let subMenu;
+
+window.addEventListener("scroll", removeArrow);
+
+function removeArrow() {
+  noticeMeSenpai;
+  noticeMeSenpai.classList.toggle("hide", window.scrollY > 0);
+  console.log("hej");
+}
 
 menuMain.addEventListener("click", (e) => {
   //console.log(e.target.closest(".menu-item-has-children"));
@@ -89,3 +69,10 @@ window.onresize = function () {
     }
   }
 };
+
+peechBtn.addEventListener("click", popUpHandler);
+
+peechPopUp.addEventListener("click", popUpHandler);
+function popUpHandler() {
+  peechPopUp.classList.toggle("peechy-open");
+}
