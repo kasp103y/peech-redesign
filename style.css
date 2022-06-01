@@ -83,7 +83,7 @@
   --spacing-13: 10rem;
   --spacing-14: 120rem;
   /*Borders*/
-  --border-pink-thin: 2px solid var(--pink-800);
+  --border-pink-thin: 2px solid var(--pink-700);
   --border-blue-thin: 2px solid var(--blue-900);
   /*Easing*/
   --easing: 250ms ease-in-out;
@@ -114,7 +114,8 @@ body {
 
 *:focus-visible {
   outline: 3px solid black;
-  outline-offset: 4px;
+  outline-offset: 9px;
+  border-radius: 0 999px 999px 0;
 }
 .emphasis {
   color: var(--pink-700);
@@ -648,9 +649,12 @@ header {
 footer {
   background-image: url("billeder/Footer.svg");
   background-size: cover;
-  padding-block: var(--spacing-4);
+  padding-block: var(--spacing-8);
   padding-inline: var(--spacing-8);
   margin-top: var(--spacing-13);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-5);
 }
 
 .footer-logo {
@@ -662,13 +666,24 @@ footer {
 }
 
 .footer-link {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
 }
 
 .so-me-links {
   display: flex;
   gap: var(--spacing-6);
   margin-block: var(--spacing-6);
+}
+
+.trustpilot,
+.vores-butik,
+.so-me-links {
+  margin-block: var(--spacing-8);
+}
+
+.so-me-links .fa-brands {
+  font-size: 3rem;
+  transition: var(--easing);
 }
 
 address {
@@ -678,7 +693,7 @@ address {
 .open-time ul {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-6);
+  gap: var(--spacing-1);
   margin-bottom: var(--spacing-4);
 }
 
@@ -690,9 +705,24 @@ address {
   display: flex;
   justify-content: space-between;
   width: 200px;
+  align-items: center;
 }
 
 .company-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "poppins", sans-serif;
+}
+
+.company-details:first-child {
+  align-self: end;
+}
+
+.trust-nyhed {
+  grid-row-start: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .news-input {
@@ -700,6 +730,7 @@ address {
   border: var(--border-pink-thin);
   height: var(--spacing-8);
   width: var(--spacing-13);
+  font-family: "poppins", sans-serif;
 }
 
 .nyhedsbrev-footer button {
@@ -707,20 +738,25 @@ address {
   border-radius: 0;
   border: none;
   padding: var(--spacing-4);
-  background-color: var(--pink-700);
+  background-color: var(--pink-600);
   color: var(--primary);
   font-family: "poppins", sans-serif;
   cursor: pointer;
   text-align: center;
+  font-size: var(--font-size-base);
+  line-height: 0;
 }
 
-.trustpilot img {
-  width: 25rem;
+.trustpilot {
+  width: 15rem;
+  align-self: center;
 }
 
 .input-flex {
   display: flex;
+  gap: var(--spacing-4);
 }
+
 /************************************************************* General slut ****************************************************************************/
 
 .heading-xxxl,
@@ -1119,9 +1155,9 @@ ul li a {
   display: none;
 }
 
-/************************************************************* Mobil slut ****************************************************************************/
+/************************************************************* Mobil slut ************************************************/
 
-/************************************************************* Tablet styling ****************************************************************************/
+/************************************************************* Tablet styling ***********************************************************/
 
 @media (min-width: 730px) {
   .main-grid {
@@ -1215,12 +1251,12 @@ ul li a {
     grid-row-start: 3;
   }
 
-  footer {
+  /*   footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-inline: var(--spacing-13);
+    padding-inline: var(--spacing-8);
     gap: var(--spacing-8);
-  }
+  } */
 
   .trustpilot {
     grid-column-start: 3;
@@ -1233,14 +1269,38 @@ ul li a {
   .vores-butik {
     grid-row-start: span 2;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    gap: var(--spacing-10);
+    margin-block: 0;
+  }
+
+  footer {
+    padding-inline: var(--spacing-13);
+    height: 90vh;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nyhedsbrev-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nyhedsbrev-footer article {
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
 /************************************************************* Tablet slut ****************************************************************************/
 
-/************************************************************* Desktop styling ****************************************************************************/
+/************************************************************* Desktop styling ******************************************************/
 
 @media (min-width: 1000px) {
   .main-grid {
@@ -1274,25 +1334,19 @@ ul li a {
     height: 150px;
     top: 85%;
     left: 0;
-    background-image: url(billeder/blob-bg.svg); 
-    background-position: 30%; 
+    background-image: url(billeder/blob-bg.svg);
+    background-position: 30%;
     transition: var(--trans);
- 
   }
   .cookies {
     display: flex;
     color: var(--blue-900);
-    gap: 3rem; 
-  
+    gap: 3rem;
   }
-
- 
 }
 
+/************************************************************* Desktop slut **************************************************/
 
-/************************************************************* Desktop slut **************************************************************************
-
-/******************************************************
 @media (min-width: 600px) {
   .button:hover,
   .logo:hover {
@@ -1343,10 +1397,13 @@ ul li a {
   .skip-nav:focus-visible {
     opacity: 1;
   }
-}
+
+  .so-me-links:hover .fa-brands:hover {
+    color: var(--pink-600);
+  }
 }
 
-/****************************KEYFRAMES***************
+/****************************KEYFRAMES***************/
 @keyframes vibrate-2 {
   0% {
     -webkit-transform: translate(0);
