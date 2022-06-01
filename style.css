@@ -1028,11 +1028,13 @@ ul li a {
 .hero {
   height: 100vh;
   display: grid;
-  background-image: url("billeder/splash.jpg");
+  background-image: url("content/pic/dildoVib_frugt1.webp");
+  background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   align-content: center;
   background-attachment: fixed;
+  background-position: 50% 70%;
 }
 
 .custom-shape-divider-bottom-1653556236 {
@@ -1353,18 +1355,21 @@ ul li a {
   .featured-products {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--spacing-4);
   }
 
   .featured-products .product-card:nth-child(1) {
     grid-column-start: 1;
-    grid-row-start: 1;
+    grid-column-end: 3;
   }
   .featured-products .product-card:nth-child(2) {
-    grid-column-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
     grid-row-start: 2;
   }
   .featured-products .product-card:nth-child(3) {
     grid-column-start: 1;
+    grid-column-end: 3;
     grid-row-start: 3;
   }
 
