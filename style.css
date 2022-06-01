@@ -255,7 +255,18 @@ header {
 
 .menu-main {
   display: flex;
+}
+
+.mega-menu-img {
+  background-image: url("billeder/clamy_copy.webp");
+  background-size: cover;
+  display: flex;
+  align-items: center;
   justify-content: center;
+}
+
+.mega-menu-img > a > p {
+  color: var(--pink-500);
 }
 
 .mobile-menu-trigger,
@@ -1256,6 +1267,13 @@ ul a {
   #focus-me:focus-within .sub-menu {
     margin-top: 20px;
     visibility: visible;
+    opacity: 1;
+  }
+
+  .skip-nav {
+    opacity: 0;
+  }
+  .skip-nav:focus-visible {
     opacity: 1;
   }
 }
