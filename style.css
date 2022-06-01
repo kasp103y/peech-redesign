@@ -870,6 +870,12 @@ address {
   background-position: 50%;
 }
 
+.blob-bg-ekstra {
+  background-image: url("billeder/blobekstra.svg");
+  background-size: cover;
+  background-position: 50%;
+}
+
 .cta-shop {
   display: flex;
   justify-content: center;
@@ -1153,7 +1159,7 @@ ul li a {
 .lead-var {
   font-family: "shocka", sans-serif;
   font-size: var(--font-size-lg);
-  color: var(--primary);
+  color: var(--pink-800);
   font-weight: var(--bold);
 }
 
@@ -1354,7 +1360,7 @@ ul li a {
     height: 150px;
     top: 85%;
     left: 0;
-    background-image: url(billeder/Footer.svg);
+    background-image: url(billeder/cookie.svg);
     background-position: 80%;
     transition: var(--trans);
   }
@@ -1362,6 +1368,13 @@ ul li a {
     display: flex;
     color: var(--blue-900);
     gap: 3rem;
+  }
+
+  .lead-var {
+    font-family: "shocka", sans-serif;
+    font-size: var(--font-size-lg);
+    color: var(--pink-800);
+    font-weight: var(--bold);
   }
 
   .hidden {
