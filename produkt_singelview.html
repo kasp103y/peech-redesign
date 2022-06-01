@@ -19,6 +19,7 @@
       crossorigin="anonymous"
       defer
     ></script>
+    
   </head>
   <body>
     <!-- header start -->
@@ -192,6 +193,19 @@
             <li><a class="small-text" href="produkter.html">Vibratorer</a></li>
             <li class="small-text">Clamy Klitoris Stimulator</li>
           </ul>
+
+          <section class="billeder_pris_info">
+          <!-- produkt billeder til web -->
+          <section class="produkt_pic_web">
+              <video src="content/video/clamy_frugt.mp4"></video>
+              <img src="content/pic/clamy1.webp" alt="">
+              <img src="content/pic/clamy2.webp" alt="">
+              <img src="content/pic/clamy3.webp" alt="">
+              <img src="content/pic/clamy_frugt1.webp" alt="">
+          </section>
+
+
+          <!-- produkt billeder til mobil -->
           <section class="carousel_billeder">
             <div class="carouselContainer">
               <div class="carouselImgs slide1">
@@ -230,7 +244,7 @@
             </div>
           </section>
 
-          <article>
+          <article class="pris_detaljer_info">
             <h2 class="heading-lg">Clamy klitoris stimulator</h2>
             <h3 class="heading-md">380 DKK</h3>
 
@@ -251,20 +265,38 @@
               </ul>
             </div>
 
-            <h1>CTA KNAPPER</h1>
-            <!-- 
-  
-            <section class="tilføj_cta">
-            <div id="mainDiv">
-              <button class="button-outlined-var" id="minus">-</button>
-              <p id="numberPlace">0</p>
-              <button class="button-outlined-var" id="plus">+</button>
-            </div>
-            <button class="button-primary" id="submit">Køb</button>
-            <p id="bottom"></p>
-          </article>
-            <section> -->
-            <article>
+            <section class="info_svg">
+              <ul>
+                <li>
+                  <img src="ikoner/ikon_single1.svg" alt="">
+                  <p class="small-text">Nem at rengøre</p>
+                </li>
+                <li> 
+                  <img src="ikoner/ikon_single2.svg" alt="">
+                  <p class="small-text"> 10 forskellige <br> vibrationsmønstre</p>
+                </li>
+                <li>
+                  <img src="ikoner/ikon_single3.svg" alt="">
+                  <p class="small-text">Pulserende</p>
+                </li>      
+              </ul>
+            </section>
+
+<section class="cta_section">
+    <div class="count-box">
+     <button class="btn btn-full plus"  id="plus" data-type="plus" > -  </button>
+     <input  type="text count" name="quantity"    value="1" id="count">
+     <span class="num">0</span>
+     <button class="btn btn-full minus"  id="minus" data-type="minus" > + </button>
+</div>
+<a class="button-primary button" href=""> Tilføj til kurv</a>
+</section>
+
+</article>
+</section>
+
+            
+            <article class="beskrivende_tekst">
               <h3 class="heading-md">
                 Den sødeste vakuum vibrator formet som en lille muslingeskal
               </h3>
@@ -520,7 +552,7 @@
                 </article>
               </article>
             </article>
-          </section>
+            </section>
 
 <section class="kundeandmeldelser">
           <article>
@@ -538,7 +570,7 @@
               </div>
           </article>
 
-
+<section class="person_andmeld_grid">
        <article class="person_andmelelser">
          <div class="dato_star">
          <div class="stars">
@@ -583,8 +615,11 @@
         <p class="small-text"> Bo Larsen</p>
         <p class="heading-sm">God service og vejledning</p>
         <p class="p-small">God service og vejledning, let og tilgængelig hjemmeside, godt udvalg og lækre produkter, hurtig levering.</p>
-       </article>
-
+      
+      
+      
+      </article>
+</section>
 <p class="p alle_andmeldelser button" >Se alle andmeldelser  &#x2192;</p>
 
 </section>
@@ -594,7 +629,7 @@
             <article class="poplaere_proukter">
               
 <div class="andre_produkter">
-  <video src="content/video/test_hover.mp4"></video>
+  <video src="content/video/bullied_vand2.mp4"></video>
   <div class="navn_pris">
                   <p class="small-text">Bullie vibrator</p>
                   <p class="small-text">250 DKK</p>
@@ -611,7 +646,7 @@
 
 </div>
 <div class="andre_produkter">
-  <video src="content/video/test_hover.mp4"></video>
+  <video src="content/video/buttplug_vand.mp4"></video>
   <div class="navn_pris">
                   <p class="small-text">Bullie vibrator</p>
                   <p class="small-text">250 DKK</p>
@@ -629,7 +664,9 @@
 
 
             </article>
-
+ </section>
+      </section>
+        </section>
       </section>
     </main>
     <footer>
@@ -742,14 +779,77 @@
 </html>
 
 <style>
-<<<<<<< HEAD
 
  
   
 
 
 /* ----------------------general--------- */
-.fa-star{
+main{
+  margin-top: var(--spacing-13);
+}
+.info_svg img{
+  width: 38%;
+  height: auto;
+}
+.info_svg p{
+  padding-left: var(--spacing-2);
+}
+.info_svg ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.info_svg li{
+  display: flex;
+  justify-content: center;
+}
+.info_svg{
+  margin-block: var(--spacing-7) ;
+}
+.cta_section a{
+  margin-block: var(--spacing-5);
+}
+.cta_section{
+  margin-block:var(--spacing-10) ;
+}
+.count-box {
+    display: flex;
+    width: 115px;
+    border: 1px solid var(--blue-900);
+}
+
+.count-box .btn {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    line-height: 30px;
+    font-weight: 500;
+    margin: 0;
+    background: var(--blue-900);
+    color: var(--primary);
+    border: 0;
+}
+
+.count-box input {
+    display:none;
+}
+
+.count-box .num {
+    width: 45px;
+    margin: 0 5px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 0;
+    color: #5b557d;
+    font-weight: 600;
+}
+
+
+
+
+.fa-soild, .fa-star{
   color: var(--pink-200);
 }
 .populear_produkter{
@@ -815,24 +915,13 @@ video{
          padding-right: 5px;
          padding-bottom: 10px;
        }
-         .sikkerhed li{
+         .sikkerhed {
          display: flex;
+         justify-content: space-between;
+         padding-inline:var(--spacing-7) ;
+         margin-block:var(--spacing-7) ;
 }
-=======
-  table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
 
-  td, th {
-    border: 1px solid var(--heading);
-    text-align: left;
-    padding: 8px;
-  }
->>>>>>> 259ae722763c6a16cd8c9c6695e5f70092ebd057
-
-         /* ---------general--------- */
          .check_icon{
            padding-right: 5px;
            padding-bottom: 10px;
@@ -841,7 +930,6 @@ video{
            display: flex;
   }
 
-<<<<<<< HEAD
        li p{
          margin-top: var(--spacing-3);
        }
@@ -871,32 +959,6 @@ td, th {
   padding: 8px;
 } 
        /* ------- knap med plus og minus-------- */
-=======
-  .sikkerhed {
-           display: flex;
-           text-align: center;
-           justify-content: space-between;
-           padding-inline: var(--spacing-7);
-           margin-block: var(--spacing-7) ;
-         }
-
-         li p{
-           margin-top: var(--spacing-3);
-         }
-      .info_mol {
-           display: flex;
-           text-align: center;
-           justify-content: space-between;
-           padding-inline: var(--spacing-7);
-         }
-         h2{
-           margin-top:var(--spacing-7);
-         }
-         h3{
-           margin-top: var(--spacing-4);
-           margin-bottom:var(--spacing-7);
-         }
->>>>>>> 259ae722763c6a16cd8c9c6695e5f70092ebd057
 
          /* ------- knap med plus og minus-------- */
 
@@ -914,11 +976,11 @@ td, th {
     }
 
     #minus:hover{
-        background-color:var( --pink-700);
+        background-color:var( --pink-300);
         border:none;
     }
     #plus:hover{
-        background-color:var(--blue-700);
+        background-color:var( --nav-links);
         border:none;
     }
     #numberPlace {
@@ -938,8 +1000,11 @@ td, th {
 
          /* ---- */
            /* -----breadcrum---- */
+           .breadcrumb{
+             justify-self: start;
+           }
            ul.breadcrumb {
-           padding: 10px 16px;
+             padding-bottom: var(--spacing-2);
            list-style: none;
          }
          ul.breadcrumb li {
@@ -988,7 +1053,8 @@ td, th {
            }
            .next {
              right: 40%;
-
+           }
+             
            @keyframes fade {
              from {
                opacity: 0.4;
@@ -997,51 +1063,59 @@ td, th {
                opacity: 1;
              }
            }
+           .produkt_pic_web{
+             display: none;
+           }
            /* -------- */
+
+             @media (min-width: 1000px) {
+
+            .carousel_billeder{
+              display:none;
+            }
+            .produkt_pic_web{
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+               grid-gap: 5px;
+             grid-auto-rows: minmax(100px, auto);
+
+            }
+            .poplaere_proukter{
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+               grid-gap: 5px;
+             grid-auto-rows: minmax(100px, auto);
+            }
+            .produkt_pic_web video{
+              grid-column: 1/3;
+            }
+            .billeder_pris_info{
+               display: grid;
+              grid-template-columns: repeat(2, 1fr);
+               grid-gap: 5px;
+             grid-auto-rows: minmax(100px, auto);
+
+            }
+            .breadcrumb{
+            justify-self: start;
+            }
+            .pris_detaljer_info{
+              padding-left: var(--spacing-7);
+            }
+            .beskrivende_tekst{
+              margin-top: var(--spacing-10);
+            }
+.person_andmeld_grid{
+   display: grid;
+              grid-template-columns: repeat(3, 1fr);
+               grid-gap: 5px;
+             grid-auto-rows: minmax(100px, auto);
+}
+          }
 </style>
 
 <script>
-  // var minusBtn = document.getElementById("minus"),
-  //   plusBtn = document.getElementById("plus"),
-  //   numberPlace = document.getElementById("numberPlace"),
-  //   submitBtn = document.getElementById("submit"),
-  //   number = 0, /// number value
-  //   min = 0, /// min number
-  //   max = 30; /// max number
-
-  // minusBtn.onclick = function () {
-  //   if (number > min) {
-  //     number = number - 1; /// Minus 1 of the number
-  //     numberPlace.innerText = number; /// Display the value in place of the number
-  //   }
-  //   if (number == min) {
-  //     numberPlace.style.color = "red";
-  //     setTimeout(function () {
-  //       numberPlace.style.color = "black";
-  //     }, 500);
-  //   } else {
-  //     numberPlace.style.color = "black";
-  //   }
-  // };
-  // plusBtn.onclick = function () {
-  //   if (number < max) {
-  //     number = number + 1;
-  //     numberPlace.innerText = number; /// Display the value in place of the number
-  //   }
-  //   if (number == max) {
-  //     numberPlace.style.color = "red";
-  //     setTimeout(function () {
-  //       numberPlace.style.color = "black";
-  //     }, 500);
-  //   } else {
-  //     numberPlace.style.color = "black";
-  //   }
-  // };
-  // submitBtn.onclick = function () {
-  //   alert("tilføjet til kurven: " + number);
-  // };
-
-
+  
 
   const videos = document.querySelectorAll("video")
 
