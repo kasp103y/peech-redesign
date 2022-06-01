@@ -1088,8 +1088,8 @@ ul li a {
 /* Cookie card */
 
 .cookie-link {
-  font-family: ;
-  color: var(--blue-900);
+  font-family: shocka; 
+ color: var(--heading);
   text-decoration: underline;
   display: flex;
   align-items: center;
