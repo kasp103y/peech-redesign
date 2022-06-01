@@ -263,10 +263,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  backdrop-filter: brightness(60%);
+  background-position-y: -30px;
 }
 
 .mega-menu-img > a > p {
-  color: var(--pink-500);
+  color: var(--pink-800);
 }
 
 .mobile-menu-trigger,
@@ -278,8 +280,6 @@ header {
   display: flex;
   gap: var(--spacing-5);
 }
-
-/* Banner section */
 
 @media (max-width: 991px) {
   .header .item-center {
@@ -307,6 +307,10 @@ header {
 
   .header .item-right {
     flex: 0 0 auto;
+  }
+
+  #skip-nav {
+    display: none;
   }
 
   .v-center {
@@ -841,10 +845,11 @@ ul li {
   list-style: none;
 }
 
-ul a {
+ul li a {
   text-decoration: none;
   color: var(--nav-links);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-sm);
+  font-family: "poppins", sans-serif;
 }
 
 .nav {
@@ -1315,8 +1320,16 @@ ul a {
     visibility: visible;
   }
   .menu-link:hover,
-  .sub-menu-link:hover {
+  .sub-menu-link:hover,
+  .fa-user:hover,
+  .fa-cart-shopping:hover {
     color: var(--pink-700);
+  }
+
+  .menu-link,
+  .sub-menu-link,
+  .fa-user,
+  .fa-cart-shopping {
     transition: var(--easing);
   }
   #focus-me:focus-within .sub-menu {
