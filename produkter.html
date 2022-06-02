@@ -203,10 +203,12 @@
             <section class="header-item item-right">
               <ul>
                 <li>
-                  <a href="profile.html"><i class="fa-regular fa-user"></i></a>
+                  <a href="profile.html" aria-label="Gå til log ind siden"
+                    ><i class="fa-regular fa-user"></i
+                  ></a>
                 </li>
                 <li>
-                  <a href="kurv.html"
+                  <a href="kurv.html" aria-label="Gå til kurv"
                     ><i class="fa-solid fa-cart-shopping"></i
                   ></a>
                 </li>
@@ -313,9 +315,9 @@
           </article>
           <article>
             <div class="univers_link">
-              <p class="p">
+              <a class="p button" href="univers.html">
                 Er du i tvivl? Få en guide her i vores populære sexunivers!
-              </p>
+              </a>
               <svg
                 width="26"
                 height="23"
@@ -640,7 +642,7 @@
           <article class="footer-nav">
             <h3 class="heading-base">Gå på opdagelse</h3>
             <ul class="footer-nav-list">
-              <li><a class="footer-link" href="om-os.html">Om Peech</a></li>
+              <li><a class="footer-link" href="om.html">Om Peech</a></li>
               <li>
                 <a class="footer-link" href="univers.html">Sex univers</a>
               </li>
@@ -665,13 +667,19 @@
           </address>
           <ul class="so-me-links">
             <li>
-              <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+              <a href="facebook.com" aria-label="gå til Peech facebook side"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
             </li>
             <li>
-              <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+              <a href="instagram.com" aria-label="gå til Peech Instagram side"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
             </li>
             <li>
-              <a href="tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="tiktok.com" aria-label="gå til Peech Tiktok side"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
             </li>
           </ul>
           <article class="nyhedsbrev-footer">
@@ -741,6 +749,11 @@
 </html>
 
 <style>
+  .univers_link a {
+    text-decoration: none;
+    color: var(--pink-800);
+  }
+
   .fa-soild,
   .fa-star {
     color: var(--pink-200);
