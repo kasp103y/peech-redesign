@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-      property="og:description"
+      name="description"
       content="Kvalitetsbevidst sexlegetøj i et positivt og omfavnende univers. Hos Peech bestræber vi os på at have et lækkert og nøje kurateret udvalg af kvalitetsprodukter."
     />
     <title>PEECH | DK's Sexlegetøj Boutique | Sundhed og Seksualitet</title>
@@ -22,7 +22,6 @@
       defer
     ></script>
     <script src="script.js" defer></script>
-    <script src="cookie.js" defer></script>
   </head>
   <body>
     <!-- header start -->
@@ -205,10 +204,10 @@
             <section class="header-item item-right">
               <ul>
                 <li>
-                  <a href="profile.html"><i class="fa-regular fa-user"></i></a>
+                  <a href="profile.html" aria-label="Gå til log ind siden"><i class="fa-regular fa-user"></i></a>
                 </li>
                 <li>
-                  <a href="kurv.html"
+                  <a href="kurv.html" aria-label="Gå til kurv"
                     ><i class="fa-solid fa-cart-shopping"></i
                   ></a>
                 </li>
@@ -235,8 +234,8 @@
             <a href="#" class="cookie-link">Læs vores cookie politik her </a>
           </article>
           <div class="cookie_buttons">
-            <a href="#" class="button-primary button" id="accepter">Accepter</a>
-            <a href="#" class="button-outlined button" id="afvis">Afvis</a>
+            <button class="button-primary button" id="accepter">Accepter<button>
+            <button class="button-outlined button" id="afvis">Afvis<button>
           </div>
         </article>
       </section>
@@ -255,7 +254,7 @@
         </article>
         <article class="flex justify-center">
           <a
-            href="shop.html"
+            href="produkter.html"
             id="focus-first"
             class="button button-primary"
             rel="noopener"
@@ -293,7 +292,7 @@
       </section>
 
       <section class="peechy-points">
-        <button class="points-btn">
+        <button class="points-btn" aria-label="Læs om peechy points og hør hvordan du kan få gratis fragt">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="150"
@@ -509,7 +508,7 @@
                 vores vision. Vi vil gerne være med til at nuancere opfattelsen
                 af sex og sexlegetøj.
               </p>
-              <a href="#" class="button-primary button">Læs om os</a>
+              <a href="om.html" class="button-primary button">Læs om os</a>
             </article>
             <figure class="graphic">
               <svg
@@ -832,7 +831,7 @@
                 class="mix dildo pillow_talk alle_p alle_b produkt_card product-card"
                 href="produkt_singelview.html"
               >
-                <img src="content/pic/stor_dildo.webp" alt="" />
+                <img src="content/pic/stor_dildo.webp" alt="Stor lilla dildo" />
                 <div class="navn_pris">
                   <p class="small-text">Fun Factory strap on dildo</p>
                   <p class="small-text">620 DKK</p>
@@ -850,7 +849,7 @@
                 class="mix dildo vibrator satisfyer alle_p alle_b produkt_card product-card"
                 href="produkt_singelview.html"
               >
-                <img src="content/pic/dildo.webp" alt="" />
+                <img src="content/pic/dildo.webp" alt="Lyserød vibrator dildo" />
                 <div class="navn_pris">
                   <p class="small-text">Mono flex vibrator</p>
                   <p class="small-text">395 DKK</p>
@@ -987,12 +986,12 @@
           <article class="footer-nav">
             <h3 class="heading-base">Gå på opdagelse</h3>
             <ul class="footer-nav-list">
-              <li><a class="footer-link" href="om-os.html">Om Peech</a></li>
+              <li><a class="footer-link" href="om.html">Om Peech</a></li>
               <li>
                 <a class="footer-link" href="univers.html">Sex univers</a>
               </li>
               <li><a class="footer-link" href="kontakt.html">Kontakt os</a></li>
-              <li><a class="footer-link" href="shop.html">Shop</a></li>
+              <li><a class="footer-link" href="produkter.html">Shop</a></li>
               <li><a class="footer-link" href="jobs.html">Karriere</a></li>
               <li><a class="footer-link" href="jobs.html">Cookiepolitik</a></li>
               <li>
@@ -1001,7 +1000,7 @@
             </ul>
           </article>
           <article class="trustpilot">
-            <img src="billeder/trustpilot.svg" alt="" />
+            <img src="billeder/trustpilot.svg" alt="Trustpilot" />
           </article>
         </article>
         <article class="vores-butik">
@@ -1012,13 +1011,13 @@
           </address>
           <ul class="so-me-links">
             <li>
-              <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+              <a href="facebook.com" aria-label="gå til Peech facebook side"><i class="fa-brands fa-facebook"></i></a>
             </li>
             <li>
-              <a href="instagram.com"><i class="fa-brands fa-instagram"></i></a>
+              <a href="instagram.com" aria-label="gå til Peech Instagram side"><i class="fa-brands fa-instagram"></i></a>
             </li>
             <li>
-              <a href="tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="tiktok.com" aria-label="gå til Peech Tiktok side"><i class="fa-brands fa-tiktok"></i></a>
             </li>
           </ul>
           <article class="nyhedsbrev-footer">
@@ -1031,7 +1030,7 @@
               <form>
                 <label for="email">Email</label>
                 <div class="input-flex">
-                  <input class="news-input" type="Email" /><button
+                  <input class="news-input" type="Email" id="email" /><button
                     class="button"
                     type="submit"
                   >
@@ -1080,7 +1079,7 @@
       <address class="company-details">
         <p>Peech APS</p>
         <p><span>CVR:</span> 40230386</p>
-        <p><span>Telefon:</span> <a href="tel:"></a> 69 69 69 69</p>
+        <p><span>Telefon:</span> <a href="tel:">69 69 69 69</a></p>
         <p><span>Email: </span><a href="mailto:">farvel@peech.not</a></p>
       </address>
     </footer>

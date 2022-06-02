@@ -252,7 +252,7 @@ header {
 
 .header {
   display: block;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   z-index: 99;
   padding: 20px;
@@ -987,8 +987,8 @@ address {
   border-radius: 0;
   border: none;
   padding: var(--spacing-4);
-  background-color: var(--pink-600);
-  color: var(--primary);
+  background-color: var(--pink-400);
+  color: var(--btn-color);
   font-family: "poppins", sans-serif;
   cursor: pointer;
   text-align: center;
@@ -1445,6 +1445,10 @@ ul li a {
 .hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.cookie-card.hidden {
+  display: none;
 }
 
 .none {
