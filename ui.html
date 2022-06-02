@@ -11,15 +11,32 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/25564eaf21.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
     <script src="script.js" defer></script>
   </head>
   <body>
     <header></header>
     <main>
+      <div class="alert-box">
+        <div class="alert">
+          <p>
+            <i class="fa-solid fa-check"></i> Sådan! Produktet er tilføjet til
+            kurven
+          </p>
+        </div>
+      </div>
       <section>
         <article>
-          <a href="#" class="button button-primary">Button primary</a>
+          <a href="#" class="button button-primary button-buy"
+            >Button primary</a
+          >
           <a href="#" class="button button-secondary">Button secondary</a>
 
           <a href="#" class="button button-outlined"
@@ -69,4 +86,34 @@
     gap: 2rem;
     align-content: center;
   }
+
+  .alert-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+  }
+
+  .alert {
+    background-color: var(--sand-400);
+    padding-block: var(--spacing-4);
+    padding-inline: var(--spacing-8);
+  }
+
+  .show {
+    display: block;
+  }
 </style>
+
+<script>
+  const alert = document.querySelector(".alert-box");
+  const buy = document.querySelector(".button-buy");
+
+  buy.addEventListener("click", showAlert);
+
+  function showAlert() {
+    console.log("hej");
+    alert.classList.add("show");
+  }
+</script>

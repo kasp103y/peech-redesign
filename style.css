@@ -762,6 +762,24 @@ input[checkbox] {
   cursor: pointer;
 }
 
+.button-sm-outlined {
+  background-color: transparent;
+  border: none;
+  color: black;
+  border: var(--border-pink-thin);
+  padding-block: var(--spacing-3);
+  padding-inline: var(--spacing-4);
+  font-size: var(--font-size-sm);
+  font-weight: bold;
+  font-family: "shocka-bold", serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
 .button-secondary {
   background-color: var(--blue-900);
   border: none;
