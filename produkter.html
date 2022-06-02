@@ -433,7 +433,10 @@
           </article>
           <section class="produkt_grid">
             <!------------------------------ BULLIE------------------------------------- -->
-            <figure class="mix vibrator peech alle_p alle_b">
+            <a
+              class="mix vibrator peech alle_p alle_b produkt_card"
+              href="produkt_singelview.html"
+            >
               <img
                 src="content/pic/bullet_1.webp"
                 alt="produkt billede af Bullie vibrator "
@@ -452,9 +455,12 @@
                   <i class="fa-solid fa-star"></i>
                 </div>
               </figcaption>
-            </figure>
+            </a>
             <!------------------------------BUTTPLUG------------------------------------- -->
-            <figure class="mix kink satisfyer alle_p alle_b">
+            <a
+              class="mix kink satisfyer alle_p alle_b produkt_card"
+              href="produkt_singelview.html"
+            >
               <img src="content/pic/buttplug1.webp" alt="" />
               <div class="navn_pris">
                 <p class="small-text">Lolli vibrerende buttplug</p>
@@ -468,9 +474,12 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
               </div>
-            </figure>
+            </a>
             <!------------------------------CLAMY------------------------------------- -->
-            <figure class="mix vibrator peech alle_p alle_b">
+            <a
+              class="mix vibrator peech alle_p alle_b produkt_card"
+              href="produkt_singelview.html"
+            >
               <img src="content/pic/clamy1.webp" alt="" />
               <div class="navn_pris">
                 <p class="small-text">Clamy Klitoris stimulator</p>
@@ -484,10 +493,13 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
               </div>
-            </figure>
+            </a>
             <!------------------------------DILDO VIBATATOR------------------------------------- -->
 
-            <figure class="mix dildo vibrator satisfyer alle_p alle_b">
+            <a
+              class="mix dildo vibrator satisfyer alle_p alle_b produkt_card"
+              href="produkt_singelview.html"
+            >
               <img src="content/pic/dildo.webp" alt="" />
               <div class="navn_pris">
                 <p class="small-text">Mono flex vibrator</p>
@@ -501,9 +513,12 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
               </div>
-            </figure>
+            </a>
             <!------------------------------STOR DILDO------------------------------------- -->
-            <figure class="mix dildo pillow_talk alle_p alle_b">
+            <a
+              class="mix dildo pillow_talk alle_p alle_b produkt_card"
+              href="produkt_singelview.html"
+            >
               <img src="content/pic/stor_dildo.webp" alt="" />
               <div class="navn_pris">
                 <p class="small-text">Fun Factory strap on dildo</p>
@@ -517,9 +532,12 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
               </div>
-            </figure>
+            </a>
             <!------------------------------STOR DILDO------------------------------------- -->
-            <figure class="mix dildo pillow_talk alle_p alle_b">
+            <a
+              class="mix dildo pillow_talk alle_p alle_b produkt_card"
+              href="produkt_singelview.html"
+            >
               <img src="content/pic/stor_dildo.webp" alt="" />
               <div class="navn_pris">
                 <p class="small-text">Fun Factory strap on dildo</p>
@@ -533,7 +551,7 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
               </div>
-            </figure>
+            </a>
           </section>
           <div class="load_mere">
             <p class="p">1</p>
@@ -684,6 +702,11 @@
 </html>
 
 <style>
+  .fa-soild,
+  .fa-star {
+    color: var(--pink-200);
+  }
+
   .alle_p img {
     aspect-ratio: 16/9;
     object-fit: cover;
@@ -920,11 +943,13 @@
     height: auto;
   }
 
-  figure {
+  .produkt_card {
     width: fit-content;
     height: fit-content;
     cursor: pointer;
     margin-block: var(--spacing-7);
+    text-decoration: none;
+    color: var(--heading);
   }
   .navn_pris {
     display: flex;
@@ -932,7 +957,7 @@
     justify-content: space-between;
   }
 
-  figure:hover {
+  .produkt_card:hover {
     transform: scale(1.03);
     transition: var(--easing);
   }
