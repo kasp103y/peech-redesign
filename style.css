@@ -1149,7 +1149,11 @@ address {
   background-size: cover;
   background-position: 50%;
 }
-
+.hero-blob-bg {
+  background-image: url("billeder/hero_blob.svg");
+  background-size: cover;
+  background-position: 50%;
+}
 .blob-bg-ekstra {
   background-image: url("billeder/blobekstra.svg");
   background-size: cover;
