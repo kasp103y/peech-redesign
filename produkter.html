@@ -1013,11 +1013,11 @@
 </style>
 
 <script>
-  var minSlider = document.getElementById("min2");
-  var maxSlider = document.getElementById("max2");
+  var minSlider = document.querySelector("#min2");
+  var maxSlider = document.querySelector("#max2");
 
-  var outputMin = document.getElementById("min-value2");
-  var outputMax = document.getElementById("max-value2");
+  var outputMin = document.querySelector("#min-value2");
+  var outputMax = document.querySelector("#max-value2");
 
   outputMin.innerHTML = minSlider.value;
   outputMax.innerHTML = maxSlider.value;
@@ -1030,11 +1030,11 @@
     outputMax.innerHTML = this.value;
   };
 
-  var minSlider = document.getElementById("min");
-  var maxSlider = document.getElementById("max");
+  var minSlider = document.querySelector("#min");
+  var maxSlider = document.querySelector("#max");
 
-  var outputMin = document.getElementById("min-value");
-  var outputMax = document.getElementById("max-value");
+  var outputMin = document.querySelector("#min-value");
+  var outputMax = document.querySelector("#max-value");
 
   outputMin.innerHTML = minSlider.value;
   outputMax.innerHTML = maxSlider.value;
@@ -1049,13 +1049,13 @@
 
   // dropdown for mobil----------------------
   function myFunction_m() {
-    document.getElementById("myDropdown_m").classList.toggle("show_m");
+    document.querySelector("#myDropdown_m").classList.toggle("show_m");
   }
 
   // Close the dropdown menu if the user clicks outside of it
   window.onclick = function (event) {
     if (!event.target.matches(".dropbtn_m")) {
-      var dropdowns_m = document.getElementsByClassName("dropdown-content_m");
+      var dropdowns_m = document.querySelector(".dropdown-content_m");
       var i;
       for (i = 0; i < dropdowns_m.length; i++) {
         var openDropdown_m = dropdowns_m[i];
