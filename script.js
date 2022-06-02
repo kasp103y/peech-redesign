@@ -8,6 +8,9 @@ const closeMenu = document.querySelector(".mobile-menu-close");
 const goBack = document.querySelector(".go-back");
 const menuTrigger = document.querySelector(".mobile-menu-trigger");
 let subMenu;
+const acceptCookie = document.querySelector("#accepter");
+const denyCookie = document.querySelector("#afvis");
+const cookies = document.querySelector(".cookie-card");
 
 window.addEventListener("scroll", removeArrow);
 
@@ -75,4 +78,18 @@ peechBtn.addEventListener("click", popUpHandler);
 peechPopUp.addEventListener("click", popUpHandler);
 function popUpHandler() {
   peechPopUp.classList.toggle("peechy-open");
+}
+
+acceptCookie.addEventListener("click", fjernCookie);
+denyCookie.addEventListener("click", fjernCookie);
+
+function fjernCookie() {
+  /*  console.log("hej"); */
+  cookies.classList.add("hidden");
+  sessionStorage.setItem("jatilcookies", true);
+  console.log(sessionStorage.getItem("jatilcookies"));
+}
+
+if (sessionStorage.getItem("jatilcookies")) {
+  cookies.classList.add("hidden");
 }
