@@ -606,6 +606,51 @@ input[checkbox] {
   display: block;
 }
 
+.basket-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-8);
+}
+
+.product-basket {
+  height: 50vh;
+  overflow: scroll;
+  direction: rtl;
+}
+
+.product-basket figure {
+  max-width: 300px;
+  margin-bottom: var(--spacing-6);
+}
+
+#minus,
+#plus {
+  height: 30px;
+  width: 30px;
+}
+
+#minus:hover {
+  background-color: var(--pink-300);
+  border: none;
+}
+#plus:hover {
+  background-color: var(--nav-links);
+  border: none;
+}
+#numberPlace {
+  margin-left: 5px;
+  margin-right: 5px;
+  align-self: center;
+}
+
+#submit {
+  border: none;
+  height: 25px;
+}
+#bottom {
+  margin-top: 90%;
+}
+
 .button-primary {
   background-color: var(--pink-300);
   border: none;
@@ -978,6 +1023,7 @@ address {
 .arrow svg {
   position: absolute;
   left: 50%;
+  transform: translateX(-50%);
   animation-name: bounce_kf;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -1273,6 +1319,17 @@ ul li a {
   .article-card {
     margin-block: var(--spacing-8);
   }
+}
+
+.navn_pris {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-size-base);
+  font-family: "shocka-bold", sans-serif;
+}
+
+.navn_pris p:nth-child(2) {
+  border-bottom: var(--border-pink-thin);
 }
 
 /* Cookie card */
