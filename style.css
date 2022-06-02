@@ -127,6 +127,19 @@ body {
   justify-self: center;
 }
 
+/** Produkt card styling**/
+.produkt_card {
+  text-decoration: none;
+  color: var(--heading);
+}
+.produkt_card:hover {
+  transform: scale(1.03);
+  transition: var(--easing);
+}
+/* .fa-soild,
+.fa-star {
+  color: var(--pink-200);
+} */
 /**Header section**/
 
 .row {
@@ -154,7 +167,7 @@ body {
 .fa-heart,
 .fa-star,
 .fa-circle {
-  color: var(--sand-700);
+  color: var(--pink-200);
 }
 
 .fa-trash {
