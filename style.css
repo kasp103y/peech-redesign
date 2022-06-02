@@ -585,6 +585,8 @@ input[type="password"] {
 
 .log-in {
   height: 90vh;
+  max-width: 70vh;
+  justify-self: center;
 }
 
 input[checkbox] {
