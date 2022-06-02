@@ -59,7 +59,7 @@
                     >
                   </li>
                   <li class="menu-item-has-children" id="focus-me">
-                    <a class="menu-link" href="#"
+                    <a class="menu-link" href="#p"
                       >Shop <i class="fa-solid fa-chevron-down"></i
                     ></a>
                     <div class="sub-menu mega-menu mega-menu-column-4">
@@ -189,7 +189,9 @@
         <section class="content-wrapper">
           <ul class="breadcrumb">
             <li>
-              <a class="small-text" href="produkter.html"> Alle produkter</a>
+              <a id="focus-first" class="small-text" href="produkter.html">
+                Alle produkter</a
+              >
             </li>
             <li><a class="small-text" href="produkter.html">Vibratorer</a></li>
             <li class="small-text">Clamy Klitoris Stimulator</li>
@@ -287,24 +289,29 @@
 
               <section class="cta_section">
                 <article>
-                  <button class="btn btn-full plus" id="plus" data-type="plus">
-                    -
-                  </button>
-                  <input
-                    type="text count"
-                    name="quantity"
-                    value="1"
-                    id="count"
-                  />
-                  <span class="num"></span>
-                  <button
-                    class="btn btn-full minus"
-                    id="minus"
-                    data-type="minus"
-                  >
-                    +
-                  </button>
-
+                  <div class="count-box">
+                    <button
+                      class="btn btn-full plus"
+                      id="plus"
+                      data-type="plus"
+                    >
+                      -
+                    </button>
+                    <input
+                      type="text count"
+                      name="quantity"
+                      value="1"
+                      id="count"
+                    />
+                    <span class="num"></span>
+                    <button
+                      class="btn btn-full minus"
+                      id="minus"
+                      data-type="minus"
+                    >
+                      +
+                    </button>
+                  </div>
                   <a class="button-primary button" href="">Tilføj til kurv</a>
                 </article>
               </section>
@@ -794,6 +801,10 @@
 
 <style>
   /* ----------------------general--------- */
+  .produkt_pic_web img {
+    aspect-ratio: 5/4;
+    object-fit: cover;
+  }
   main {
     margin-top: var(--spacing-13);
   }
