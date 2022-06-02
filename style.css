@@ -560,6 +560,15 @@ header {
   }
 }
 
+#month {
+  border: none;
+  border-radius: 0;
+  background-color: var(--pink-400);
+  font-family: "poppins", serif;
+  font-size: var(--font-size-base);
+  line-height: 0;
+}
+
 .menu-overlay {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
