@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Peech | singel view</title>
+    <title>Peech | Clamy | Lækker klitorisstimulering</title>
+    <meta
+      name="description"
+      content="Giver den ultimative klitorisstimulation. Størrelsen og formen gør den perfekt til at give en præcis klitoris pirring. 7 vibrationsmønstre og en stærk motor."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -559,7 +563,9 @@
                       +
                     </button>
                   </div>
-                  <a class="button-primary button" href="">Tilføj til kurv</a>
+                  <button class="button-primary button button-buy">
+                    Tilføj til kurv
+                  </button>
                 </article>
               </section>
             </article>
@@ -1378,6 +1384,24 @@
       grid-auto-rows: minmax(100px, auto);
     }
   }
+
+  .alert-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+  }
+
+  .alert {
+    background-color: var(--sand-400);
+    padding-block: var(--spacing-4);
+    padding-inline: var(--spacing-8);
+  }
+
+  .show {
+    display: block;
+  }
 </style>
 
 <script>
@@ -1400,4 +1424,12 @@
       this.pause();
     });
   });
+
+  const buy = document.querySelector(".button-buy");
+
+  buy.addEventListener("click", showAlert);
+
+  function showAlert() {
+    window.alert("Produkt tilføjet til kurv!");
+  }
 </script>

@@ -762,6 +762,10 @@ input[checkbox] {
   cursor: pointer;
 }
 
+.button-buy {
+  margin-top: var(--spacing-4);
+}
+
 .button-sm-outlined {
   background-color: transparent;
   border: none;
